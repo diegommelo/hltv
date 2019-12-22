@@ -9,6 +9,8 @@
 </template>
 
 <style>
+@import url('https://use.fontawesome.com/releases/v5.2.0/css/all.css');
+@import url('https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css');
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
