@@ -3,17 +3,29 @@
   <section class="section">
     <div class="container players-pick">
       <div class="columns is-mobile">
-        <div class="column" @click="isModalActive = true">
-          <div class="trophy">
-            <img src="https://www.hltv.org/img/static/event/trophies/2018/1.png" class="image is-32x32" />
+        <div class="column">
+          <div class="player-wrapper" @click="openTable('first')">
+            <Player v-bind:player="top.first"></Player>
+            <div class="trophy">
+              <img src="https://www.hltv.org/img/static/event/trophies/2018/1.png" class="image is-32x32" />
+            </div>                 
+          </div>     
+        </div>
+        <div class="column">
+          <div class="player-wrapper" @click="openTable('second')">
+            <Player v-bind:player="top.second"></Player> 
+            <div class="trophy">
+              <img src="https://www.hltv.org/img/static/event/trophies/2018/2.png" class="image is-32x32" />
+            </div>                                   
           </div>
-          <Player></Player>
         </div>
         <div class="column">
-          <Player></Player>         
-        </div>
-        <div class="column">
-          <Player></Player>
+          <div class="player-wrapper" @click="openTable('third')">
+            <Player v-bind:player="top.third"></Player> 
+            <div class="trophy">
+              <img src="https://www.hltv.org/img/static/event/trophies/2018/3.png" class="image is-32x32" />
+            </div>                                   
+          </div>          
         </div>
       </div>
       <div class="columns is-mobile">
@@ -76,9 +88,6 @@
         </div>                  
       </div>      
     </div>
-    <b-modal :active.sync="isModalActive">
-        <PlayersTable></PlayersTable>
-    </b-modal>    
   </section>
 </template>
 
@@ -91,7 +100,8 @@ export default {
   data: function () {
     return {
       isModalActive:false,
-      
+      top:{},
+      position:''
     }
   },
   props: {
@@ -100,6 +110,26 @@ export default {
   components: {
     Player,
     PlayersTable
+  },
+  methods: {
+    openTable(position){
+      let el = this
+      this.position = position
+      this.$buefy.modal.open({
+        parent:this,
+        component:PlayersTable,
+        hasModalCard:false,
+        events:{
+          'teste':function($event){
+            el.selectPlayer($event)
+          }
+        }
+      })
+    },
+    selectPlayer(player){
+      this.top[this.position]=player
+      this.$forceUpdate()
+    }
   }
 }
 </script>
@@ -107,7 +137,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .trophy {
-  display: block;
+  width:32px;
+  height:32px;
+  margin: 0 auto;
 }
 .players-pick {
   max-width:600px;
