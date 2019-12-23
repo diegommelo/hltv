@@ -15,16 +15,16 @@
         >
             <template slot-scope="props">
                 <b-table-column field="name" label="Player" width=90 searchable sortable>
-                    <img class="image is-pulled-left" :src="props.row.country" /> {{props.row.name}}
+                    <img class="image is-pulled-left flag" :src="props.row.country" /> {{props.row.name}}
                 </b-table-column>
                 <b-table-column field="team_name" label="Team" width=90 searchable sortable>
-                    <img class="image is-pulled-left is-24x24" :src="props.row.team_logo" /> {{props.row.team_name}}
+                    <img class="image is-pulled-left is-24x24 flag" :src="props.row.team_logo" /> {{props.row.team_name}}
                 </b-table-column>
                 <b-table-column field="maps" label="Maps" width=90 numeric sortable>
                     {{props.row.maps}}
                 </b-table-column>
                 <b-table-column field="rating" label="Rating" width=90 numeric sortable>
-                    {{props.row.rating}}
+                    <span :class="[{'negative':isNegative(props.row.rating)},'rating']">{{props.row.rating.toFixed(2)}}</span>
                 </b-table-column>
             </template>
         </b-table>
@@ -39,6 +39,13 @@ export default {
         selectPlayer(item){
             this.$emit('teste',item)
             this.$emit('close')
+        },
+        isNegative(rating){
+            if(rating<1){
+                return true
+            } else {
+                return false
+            }
         }
     },
     data: function() {
@@ -4021,9 +4028,19 @@ export default {
     }
 }
 </script>
-<style scoped>
+<style>
     .players-table {
         max-width: 700px;
         margin:0 auto;
+    }
+    .flag {
+        width:32px;
+        padding:5px;
+    }
+    .rating {
+        font-weight: bold;
+    }
+    .negative {
+        color:darkred;
     }
 </style>
