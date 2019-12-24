@@ -4,7 +4,7 @@
             <img v-bind:class="['image','is-rounded',size]" v-if="player" :src="'https://static.hltv.org/images/playerprofile/thumb/'+player.id+'/400.jpeg?v=4'" >
             <img v-bind:class="['image','is-rounded',size]" v-else src="https://bulma.io/images/placeholders/128x128.png">
         </figure>
-        <p v-if="player" class="player-name"><img :src="player.country" class=" flag" />{{player.name}}</p>
+        <p v-if="player" class="player-name"><img :src="player.country" class="flag" />{{player.name}}</p>
         <p v-else class="player-empty"></p>   
     </div>
 </template>
@@ -30,7 +30,8 @@ figure img {
     font-size:0.9rem;
 }
 .flag {
-    width:28px;
+    width:20px;
     vertical-align: middle;
+    margin-right: 5px;
 }
 </style>

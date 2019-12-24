@@ -171,12 +171,15 @@
             </div>                                   
           </div>          
         </div>                  
-      </div>      
+      </div> 
+      <b-button type="is-primary" @click="saveTops">Save Predictions</b-button>     
     </div>
   </section>
 </template>
 
 <script>
+import { db } from '@/db'
+import { Timestamp } from '@/db'
 import Player from '@/components/Player.vue'
 import PlayersTable from '@/components/PlayersTable.vue'
 
@@ -186,7 +189,8 @@ export default {
     return {
       isModalActive:false,
       top:{},
-      position:''
+      position:'',
+      topsLoaded:[]
     }
   },
   props: {
@@ -214,7 +218,29 @@ export default {
     selectPlayer(player){
       this.top[this.position]=player
       this.$forceUpdate()
+    },
+    saveTops(){
+      if(Object.keys(this.top).length < 20) {
+        this.$buefy.toast.open({
+          message:'Top 20 incomplete',
+          type:'is-danger'
+        })
+      } else {
+        db.collection('tops').add({
+          tops:this.top,
+          created_at:Timestamp.now()
+        }).then(ref=>{
+          this.$buefy.toast.open({
+            message:'Top 20 saved',
+            type:'is-success'
+          })
+          console.log('gravado?')
+        })
+      }
     }
+  },
+  firestore: {
+    topsLoaded: db.collection('tops')
   }
 }
 </script>
