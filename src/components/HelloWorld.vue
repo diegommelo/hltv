@@ -172,7 +172,11 @@
           </div>          
         </div>                  
       </div> 
-      <b-button type="is-primary" @click="saveTops">Save Predictions</b-button>     
+      <div v-if="!item" class="btnActions">
+        <b-button type="is-primary" @click="saveTops">Save Predictions</b-button>     
+        <b-button type="is-danger" @click="clearTops">Start Over</b-button>
+      </div>
+      <b-loading :is-full-page="true" :active.sync="isLoading" :can-cancel="true"></b-loading>
     </div>
   </section>
 </template>
@@ -185,16 +189,15 @@ import PlayersTable from '@/components/PlayersTable.vue'
 
 export default {
   name: 'HelloWorld',
+  props:['item','year'],
   data: function () {
     return {
       isModalActive:false,
       top:{},
       position:'',
-      topsLoaded:[]
+      topsLoaded:[],
+      isLoading:false
     }
-  },
-  props: {
-    msg: String
   },
   components: {
     Player,
@@ -202,18 +205,22 @@ export default {
   },
   methods: {
     openTable(position){
-      let el = this
-      this.position = position
-      this.$buefy.modal.open({
-        parent:this,
-        component:PlayersTable,
-        hasModalCard:false,
-        events:{
-          'teste':function($event){
-            el.selectPlayer($event)
+      if(!this.item){
+        let el = this
+        this.position = position
+        this.$buefy.modal.open({
+          parent:this,
+          component:PlayersTable,
+          hasModalCard:false,
+          events:{
+            'teste':function($event){
+              el.selectPlayer($event)
+            }
           }
-        }
-      })
+        })
+      } else {
+        event.preventDefault()
+      }
     },
     selectPlayer(player){
       this.top[this.position]=player
@@ -228,25 +235,51 @@ export default {
       } else {
         db.collection('tops').add({
           tops:this.top,
-          created_at:Timestamp.now()
+          created_at:Timestamp.now(),
+          year:2019
         }).then(ref=>{
           this.$buefy.toast.open({
             message:'Top 20 saved',
             type:'is-success'
           })
-          console.log('gravado?')
+        })
+      }
+    },
+    clearTops(){
+      this.top=[]
+    },
+    fetchData(item){
+      if(item!=undefined){
+        let el = this
+        this.isLoading = true
+        db.collection('tops').doc(item).get().then(snapshot => {
+          const data = snapshot.data()
+          el.top = data.tops
+          this.isLoading = false
         })
       }
     }
   },
+  mounted() {
+    this.$nextTick(function(){
+      this.fetchData(this.item)
+    })
+  },
   firestore: {
-    topsLoaded: db.collection('tops')
+    topsLoaded: db.collection('data')
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.btnActions {
+  margin-top:20px;
+}
+.btnActions button {
+  margin:0 auto;
+  margin:10px;
+}
 .trophy {
   width:32px;
   height:32px;
