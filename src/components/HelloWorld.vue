@@ -6,7 +6,7 @@
       <h4 class="title by-user">by {{username}}</h4>
     </div>
     <div class="container players-pick">
-      <div class="columns is-mobile">
+      <div class="columns is-mobile top-three">
         <div class="column">
           <div class="player-wrapper" @click="openTable('second')">
             <Player v-bind:player="top.second" size="is-96x96"></Player>
@@ -178,7 +178,7 @@
         </div>                  
       </div> 
       <div v-if="!item" class="username">
-        <b-input v-model="username" placeholder="Username"></b-input>
+        <b-input v-model="username" placeholder="Username" maxlength="50"></b-input>
       </div>
       <div v-if="!item" class="btnActions">
         <b-button type="is-dark" icon-left="content-save" @click="saveTops">Save Predictions</b-button>     
@@ -249,11 +249,11 @@ export default {
             year:2019,
             username:this.username
           }).then(ref=>{
-            this.$router.push('/'+this.year+'/'+ref.id)
             this.$buefy.toast.open({
               message:'Top 20 saved',
               type:'is-success'
-            })
+            })            
+            this.$router.replace('/2019/'+ref.id)
           })
         } catch (error) {
           console.log(error)
@@ -261,7 +261,7 @@ export default {
       }
     },
     clearTops(){
-      this.top=[]
+      this.top={}
       this.username=''
     },
     fetchData(item){
@@ -278,9 +278,9 @@ export default {
     }
   },
   mounted() {
-    this.$nextTick(function(){
+    if(this.item){
       this.fetchData(this.item)
-    })
+    }
   },
   firestore: {
     topsLoaded: db.collection('data')
@@ -289,11 +289,14 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
+.top-three .team_logo {
+  width:25px !important;
+}
 .divisor {
   margin-bottom:30px;
 }
-hr {
+.divisor hr {
     border: 0;
     height: 1px;
     width:20%;
@@ -327,8 +330,8 @@ hr {
   margin-top:auto;
 }
 .players-pick {
-  max-width:500px;
-  margin-top:40px;
+  max-width:500px !important;
+  margin-top:40px !important;
 }
 .players-pick .column {
   display: flex;

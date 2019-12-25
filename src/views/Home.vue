@@ -19,7 +19,10 @@ export default {
     HelloWorld,
   },
   updated() {
-    this.$children[0].clearTops()
+    if(!this.item){
+      this.$children[0].clearTops()
+    }
+    console.log('updated')
   }
 }
 </script>
