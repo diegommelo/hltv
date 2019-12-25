@@ -1,21 +1,25 @@
 
 <template>
   <section class="section">
+    <div v-if="username">
+      <h4 class="subtitle">predictions</h4>
+      <h4 class="title by-user">by {{username}}</h4>
+    </div>
     <div class="container players-pick">
       <div class="columns is-mobile">
         <div class="column">
-          <div class="player-wrapper" @click="openTable('first')">
-            <Player v-bind:player="top.first" size="is-128x128"></Player>
+          <div class="player-wrapper" @click="openTable('second')">
+            <Player v-bind:player="top.second" size="is-96x96"></Player>
             <div class="trophy">
-              <img src="https://www.hltv.org/img/static/event/trophies/2018/1.png" class="image is-32x32" />
+              <img src="https://www.hltv.org/img/static/event/trophies/2018/2.png" class="image is-32x32" />
             </div>                 
           </div>     
         </div>
         <div class="column">
-          <div class="player-wrapper" @click="openTable('second')">
-            <Player v-bind:player="top.second" size="is-96x96"></Player> 
+          <div class="player-wrapper" @click="openTable('first')">
+            <Player v-bind:player="top.first" size="is-128x128"></Player> 
             <div class="trophy">
-              <img src="https://www.hltv.org/img/static/event/trophies/2018/2.png" class="image is-32x32" />
+              <img src="https://www.hltv.org/img/static/event/trophies/2018/1.png" class="image is-32x32" />
             </div>                                   
           </div>
         </div>
@@ -28,6 +32,7 @@
           </div>          
         </div>
       </div>
+      <div class="divisor"><hr></hr></div>
       <div class="columns is-mobile">
         <div class="column">
           <div class="player-wrapper" @click="openTable('fourth')">
@@ -172,9 +177,12 @@
           </div>          
         </div>                  
       </div> 
+      <div v-if="!item" class="username">
+        <b-input v-model="username" placeholder="Username"></b-input>
+      </div>
       <div v-if="!item" class="btnActions">
-        <b-button type="is-primary" @click="saveTops">Save Predictions</b-button>     
-        <b-button type="is-danger" @click="clearTops">Start Over</b-button>
+        <b-button type="is-dark" icon-left="content-save" @click="saveTops">Save Predictions</b-button>     
+        <b-button type="is-danger" icon-left="delete" @click="clearTops">Start Over</b-button>
       </div>
       <b-loading :is-full-page="true" :active.sync="isLoading" :can-cancel="true"></b-loading>
     </div>
@@ -196,7 +204,8 @@ export default {
       top:{},
       position:'',
       topsLoaded:[],
-      isLoading:false
+      isLoading:false,
+      username:''
     }
   },
   components: {
@@ -233,20 +242,27 @@ export default {
           type:'is-danger'
         })
       } else {
-        db.collection('tops').add({
-          tops:this.top,
-          created_at:Timestamp.now(),
-          year:2019
-        }).then(ref=>{
-          this.$buefy.toast.open({
-            message:'Top 20 saved',
-            type:'is-success'
+        try {
+          db.collection('tops').add({
+            tops:this.top,
+            created_at:Timestamp.now(),
+            year:2019,
+            username:this.username
+          }).then(ref=>{
+            this.$router.push('/'+this.year+'/'+ref.id)
+            this.$buefy.toast.open({
+              message:'Top 20 saved',
+              type:'is-success'
+            })
           })
-        })
+        } catch (error) {
+          console.log(error)
+        }
       }
     },
     clearTops(){
       this.top=[]
+      this.username=''
     },
     fetchData(item){
       if(item!=undefined){
@@ -255,6 +271,7 @@ export default {
         db.collection('tops').doc(item).get().then(snapshot => {
           const data = snapshot.data()
           el.top = data.tops
+          el.username = data.username
           this.isLoading = false
         })
       }
@@ -273,6 +290,27 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.divisor {
+  margin-bottom:30px;
+}
+hr {
+    border: 0;
+    height: 1px;
+    width:20%;
+    margin: 0 auto;
+    background-color:#333333;
+}
+.top-three {
+  margin-top:20px;
+}
+.by-user {
+  font-size:1.3rem !important;
+}
+.username {
+  padding:20px;
+  max-width: 220px;
+  margin:0 auto;
+}
 .btnActions {
   margin-top:20px;
 }
@@ -290,6 +328,7 @@ export default {
 }
 .players-pick {
   max-width:500px;
+  margin-top:40px;
 }
 .players-pick .column {
   display: flex;
