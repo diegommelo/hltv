@@ -269,6 +269,7 @@ export default {
       this.top={}
       this.chosen=[]
       this.username=''
+      window.scrollTo(0,0)
     },
     fetchData(item){
       if(item!=undefined){

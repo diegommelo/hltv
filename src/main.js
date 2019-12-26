@@ -6,10 +6,12 @@ import './registerServiceWorker'
 import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
 import { firestorePlugin } from 'vuefire'
+import VueLazyImageLoading from 'vue-lazy-image-loading'
 
 Vue.use(Buefy)
 Vue.use(firestorePlugin)
 Vue.use(VueHead)
+Vue.use(VueLazyImageLoading)
 
 Vue.config.productionTip = false
 

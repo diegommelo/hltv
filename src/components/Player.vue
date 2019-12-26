@@ -3,8 +3,8 @@
         <div>
             <img v-if="player" :src="player.team_logo" class="team_logo is-pulled-right" :alt="player.team_name" />
             <figure class="image">
-                <img v-bind:class="['avatar','image',size]" v-if="player" :src="'https://static.hltv.org/images/playerprofile/thumb/'+player.id+'/400.jpeg?v=4'" >
-                <img v-bind:class="['avatar','image',size]" v-else src="https://static.hltv.org/images/team/logo/undefined">
+                <lazy-img v-bind:class="['avatar','image',size]" v-if="player" :src="'https://static.hltv.org/images/playerprofile/thumb/'+player.id+'/400.jpeg?v=4'" placeholder="/img/loading.gif" />
+                <lazy-img v-bind:class="['avatar','image',size]" v-else src="/img/undefined.png" />                    
                 <img v-if="player" :src="player.country" class="flag" />                                   
             </figure>
         </div>
@@ -14,9 +14,10 @@
 </template>
 
 <script>
+
 export default {
     name:'Player',
-    props: ['player', 'size']
+    props: ['player', 'size'],
 }
 </script>
 
@@ -76,13 +77,17 @@ export default {
     .top-three .flag{
         display: block;
         position: relative;
-        margin-top:-16px !important;
+        margin-top:-25px !important;
         z-index:1;
         width:18px !important;
     }    
     .top-three .team_logo {
         width:20px !important;
     }
+    .flag {
+        width:12px !important;
+        margin-top:-20px !important;
+    }    
 }
 @media only screen and (min-width:768px) {
     .avatar-big {
