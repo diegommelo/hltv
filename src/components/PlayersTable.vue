@@ -4034,10 +4034,7 @@ export default {
 </script>
 <style>
 @media only screen and (max-width: 768px){
-    .b-table .table {
-        max-width:320px !important;
-        margin:0 auto;
-    }
+
     .player-name {
         font-size:0.8rem !important;
     }

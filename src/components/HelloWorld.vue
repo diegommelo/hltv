@@ -175,6 +175,14 @@
           </div>          
         </div>                  
       </div> 
+      <div class="share">
+        <p class="share-it">Share:</p>
+        <div class="share-buttons">
+          <i class="fab fa-facebook-square facebook"></i>     
+          <i class="fab fa-twitter-square twitter"></i>    
+          <i class="fas fa-link link"></i>                     
+        </div>
+      </div>      
       <div v-if="!item" class="username">
         <b-input v-model="username" placeholder="Username" maxlength="50"></b-input>
       </div>
@@ -306,6 +314,24 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+.share {
+  margin-top:10px;
+  margin-bottom:10px;
+  color:#929a9e;
+}
+.share-buttons i {
+  padding:10px;
+  font-size:30px;
+}
+.share .facebook {
+  color:#3b5998;
+}
+.share .twitter {
+  color:#1DA1F2;
+}
+.share .link {
+  color:#2c3e50;
+}
 .teste {
   display: flex;
   flex-wrap: wrap;

@@ -83,43 +83,49 @@ export default {
     }    
     .top-three .team_logo {
         width:20px !important;
+        margin-left:20px;
     }
     .flag {
-        width:12px !important;
-        margin-top:-20px !important;
+        width:18px !important;
+        margin-top:-22px !important;
     }    
 }
 @media only screen and (min-width:768px) {
     .avatar-big {
-        min-width:128px;
-        max-width:128px;
+        min-width:176px;
     }
     .avatar-medium {
-        min-width:96px;
-        max-width:96px;
+        min-width:148px;
     }
     .avatar-small {
-        min-width:80px;
-        max-width:80px;
+        min-width:128px;
     }    
     .team_logo {
-        width:15px;
+        width:20px;
         position: absolute;
         z-index:1;
-        margin-left:22px;
+        margin-left:35px;
         margin-top:2px;
+    }    
+    .top-three .team_logo {
+        width:25px !important;
+        margin-left:45px;
     }    
     .top-three .flag{
         display: block;
         position: relative;
         margin-top:-16px;
         z-index:1;
-        width:15px;
+        width:20px;
         margin-left:8px
     }    
     .top-three .top-one .team_logo {
-        margin-left:38px !important;
+        margin-left:60px !important;
     }
+    .flag {
+        width:18px !important;
+        margin-top:-25px !important;
+    }      
 }
 .avatar {
     margin: 0 auto;
@@ -140,10 +146,11 @@ export default {
 }
 
 .flag {
-   width:16px;
+   width:32px;
    display: block;
    position: relative;
    margin-top:-15px;
    margin-left:5px;
+   border:1px solid #000;
 }
 </style>
