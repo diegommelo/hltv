@@ -1,176 +1,174 @@
-
 <template>
-  <section class="section">
+  <section class="">
     <div v-if="username">
       <h4 class="subtitle">predictions</h4>
       <h4 class="title by-user">by {{username}}</h4>
     </div>
     <div class="container players-pick">
-      <div class="columns is-mobile top-three">
-        <div class="column">
-          <div class="player-wrapper" @click="openTable('second')">
-            <Player v-bind:player="top.second" size="is-96x96"></Player>
-            <div class="trophy">
-              <img src="https://www.hltv.org/img/static/event/trophies/2018/2.png" class="image is-32x32" />
-            </div>                 
-          </div>     
-        </div>
-        <div class="column">
-          <div class="player-wrapper" @click="openTable('first')">
-            <Player v-bind:player="top.first" size="is-128x128"></Player> 
-            <div class="trophy">
-              <img src="https://www.hltv.org/img/static/event/trophies/2018/1.png" class="image is-32x32" />
-            </div>                                   
+      <div class="top-three">
+        <div class="columns is-mobile">
+          <div class="column">
+            <div class="player-wrapper" @click="openTable('second')">
+              <Player v-bind:player="top.second" size="avatar-medium"></Player>
+              <div class="trophy">
+                <img src="https://www.hltv.org/img/static/event/trophies/2018/2.png" class="image is-32x32" />
+              </div>                 
+            </div>     
           </div>
-        </div>
-        <div class="column">
-          <div class="player-wrapper" @click="openTable('third')">
-            <Player v-bind:player="top.third" size="is-96x96"></Player> 
-            <div class="trophy">
-              <img src="https://www.hltv.org/img/static/event/trophies/2018/3.png" class="image is-32x32" />
-            </div>                                   
-          </div>          
+          <div class="column top-one">
+            <div class="player-wrapper" @click="openTable('first')">
+              <Player v-bind:player="top.first" size="avatar-big"></Player> 
+              <div class="trophy">
+                <img src="https://www.hltv.org/img/static/event/trophies/2018/1.png" class="image is-32x32" />
+              </div>                                   
+            </div>
+          </div>
+          <div class="column">
+            <div class="player-wrapper" @click="openTable('third')">
+              <Player v-bind:player="top.third" size="avatar-medium"></Player> 
+              <div class="trophy">
+                <img src="https://www.hltv.org/img/static/event/trophies/2018/3.png" class="image is-32x32" />
+              </div>                                   
+            </div>          
+          </div>
         </div>
       </div>
       <div class="divisor"><hr></hr></div>
-      <div class="columns is-mobile">
-        <div class="column">
+      <div class="teste">
+        <div class="col">
           <div class="player-wrapper" @click="openTable('fourth')">
-            <Player v-bind:player="top.fourth" size="is-64x64"></Player> 
+            <Player v-bind:player="top.fourth" size="avatar-small"></Player> 
             <div class="trophy">
               <img src="https://www.hltv.org/img/static/event/trophies/2018/4.png" class="image is-32x32" />
             </div>                                   
           </div>         
         </div>
-        <div class="column">
+        <div class="col">
           <div class="player-wrapper" @click="openTable('fifth')">
-            <Player v-bind:player="top.fifth" size="is-64x64"></Player> 
+            <Player v-bind:player="top.fifth" size="avatar-small"></Player> 
             <div class="trophy">
               <img src="https://www.hltv.org/img/static/event/trophies/2018/5.png" class="image is-32x32" />
             </div>                                   
           </div>          
         </div>
-        <div class="column">
+        <div class="col">
           <div class="player-wrapper" @click="openTable('sixth')">
-            <Player v-bind:player="top.sixth" size="is-64x64"></Player> 
+            <Player v-bind:player="top.sixth" size="avatar-small"></Player> 
             <div class="trophy">
               <img src="https://www.hltv.org/img/static/event/trophies/2018/6.png" class="image is-32x32" />
             </div>                                   
           </div>         
         </div>
-        <div class="column">
+        <div class="col">
           <div class="player-wrapper" @click="openTable('seventh')">
-            <Player v-bind:player="top.seventh" size="is-64x64"></Player> 
+            <Player v-bind:player="top.seventh" size="avatar-small"></Player> 
             <div class="trophy">
               <img src="https://www.hltv.org/img/static/event/trophies/2018/7.png" class="image is-32x32" />
             </div>                                   
           </div>          
         </div>                  
-      </div>
-      <div class="columns is-mobile">
-        <div class="column">
+
+        <div class="col">
           <div class="player-wrapper" @click="openTable('eighth')">
-            <Player v-bind:player="top.eighth" size="is-64x64"></Player> 
+            <Player v-bind:player="top.eighth" size="avatar-small"></Player> 
             <div class="trophy">
               <img src="https://www.hltv.org/img/static/event/trophies/2018/8.png" class="image is-32x32" />
             </div>                                   
           </div>         
         </div>
-        <div class="column">
+        <div class="col">
           <div class="player-wrapper" @click="openTable('ninth')">
-            <Player v-bind:player="top.ninth" size="is-64x64"></Player> 
+            <Player v-bind:player="top.ninth" size="avatar-small"></Player> 
             <div class="trophy">
               <img src="https://www.hltv.org/img/static/event/trophies/2018/9.png" class="image is-32x32" />
             </div>                                   
           </div>          
         </div>
-        <div class="column">
+        <div class="col">
           <div class="player-wrapper" @click="openTable('tenth')">
-            <Player v-bind:player="top.tenth" size="is-64x64"></Player> 
+            <Player v-bind:player="top.tenth" size="avatar-small"></Player> 
             <div class="trophy">
               <img src="https://www.hltv.org/img/static/event/trophies/2018/10.png" class="image is-32x32" />
             </div>                                   
           </div>         
         </div>
-        <div class="column">
+        <div class="col">
           <div class="player-wrapper" @click="openTable('eleventh')">
-            <Player v-bind:player="top.eleventh" size="is-64x64"></Player> 
+            <Player v-bind:player="top.eleventh" size="avatar-small"></Player> 
             <div class="trophy">
               <img src="https://www.hltv.org/img/static/event/trophies/2018/11.png" class="image is-32x32" />
             </div>                                   
           </div>   
         </div>                  
-      </div>
-      <div class="columns is-mobile">
-        <div class="column">
+
+        <div class="col">
           <div class="player-wrapper" @click="openTable('twelfth')">
-            <Player v-bind:player="top.twelfth" size="is-64x64"></Player> 
+            <Player v-bind:player="top.twelfth" size="avatar-small"></Player> 
             <div class="trophy">
               <img src="https://www.hltv.org/img/static/event/trophies/2018/12.png" class="image is-32x32" />
             </div>                                   
           </div>          
         </div>
-        <div class="column">
+        <div class="col">
           <div class="player-wrapper" @click="openTable('thirteenth')">
-            <Player v-bind:player="top.thirteenth" size="is-64x64"></Player> 
+            <Player v-bind:player="top.thirteenth" size="avatar-small"></Player> 
             <div class="trophy">
               <img src="https://www.hltv.org/img/static/event/trophies/2018/13.png" class="image is-32x32" />
             </div>                                   
           </div>          
         </div>
-        <div class="column">
+        <div class="col">
           <div class="player-wrapper" @click="openTable('fourteenth')">
-            <Player v-bind:player="top.fourteenth" size="is-64x64"></Player> 
+            <Player v-bind:player="top.fourteenth" size="avatar-small"></Player> 
             <div class="trophy">
               <img src="https://www.hltv.org/img/static/event/trophies/2018/14.png" class="image is-32x32" />
             </div>                                   
           </div>       
         </div>
-        <div class="column">
+        <div class="col">
           <div class="player-wrapper" @click="openTable('fifteenth')">
-            <Player v-bind:player="top.fifteenth" size="is-64x64"></Player> 
+            <Player v-bind:player="top.fifteenth" size="avatar-small"></Player> 
             <div class="trophy">
               <img src="https://www.hltv.org/img/static/event/trophies/2018/15.png" class="image is-32x32" />
             </div>                                   
           </div>   
         </div>                  
-      </div>  
-      <div class="columns is-mobile">
-        <div class="column">
+ 
+        <div class="col">
           <div class="player-wrapper" @click="openTable('sixteenth')">
-            <Player v-bind:player="top.sixteenth" size="is-64x64"></Player> 
+            <Player v-bind:player="top.sixteenth" size="avatar-small"></Player> 
             <div class="trophy">
               <img src="https://www.hltv.org/img/static/event/trophies/2018/16.png" class="image is-32x32" />
             </div>                                   
           </div>             
         </div>
-        <div class="column">
+        <div class="col">
           <div class="player-wrapper" @click="openTable('seventeenth')">
-            <Player v-bind:player="top.seventeenth" size="is-64x64"></Player> 
+            <Player v-bind:player="top.seventeenth" size="avatar-small"></Player> 
             <div class="trophy">
               <img src="https://www.hltv.org/img/static/event/trophies/2018/17.png" class="image is-32x32" />
             </div>                                   
           </div>            
         </div>
-        <div class="column">
+        <div class="col">
           <div class="player-wrapper" @click="openTable('eighteenth')">
-            <Player v-bind:player="top.eighteenth" size="is-64x64"></Player> 
+            <Player v-bind:player="top.eighteenth" size="avatar-small"></Player> 
             <div class="trophy">
               <img src="https://www.hltv.org/img/static/event/trophies/2018/18.png" class="image is-32x32" />
             </div>                                   
           </div>         
         </div>
-        <div class="column">
+        <div class="col">
           <div class="player-wrapper" @click="openTable('nineteenth')">
-            <Player v-bind:player="top.nineteenth" size="is-64x64"></Player> 
+            <Player v-bind:player="top.nineteenth" size="avatar-small"></Player> 
             <div class="trophy">
               <img src="https://www.hltv.org/img/static/event/trophies/2018/19.png" class="image is-32x32" />
             </div>                                   
           </div>   
         </div> 
-        <div class="column">
+        <div class="col">
           <div class="player-wrapper" @click="openTable('twentieth')">
-            <Player v-bind:player="top.twentieth" size="is-64x64"></Player> 
+            <Player v-bind:player="top.twentieth" size="avatar-small"></Player> 
             <div class="trophy">
               <img src="https://www.hltv.org/img/static/event/trophies/2018/20.png" class="image is-32x32" />
             </div>                                   
@@ -205,7 +203,8 @@ export default {
       position:'',
       topsLoaded:[],
       isLoading:false,
-      username:''
+      username:'',
+      chosen:[]
     }
   },
   components: {
@@ -214,6 +213,10 @@ export default {
   },
   methods: {
     openTable(position){
+      this.chosen = []
+      for(let x in this.top){
+        this.chosen.push(this.top[x].id)
+      }
       if(!this.item){
         let el = this
         this.position = position
@@ -221,6 +224,7 @@ export default {
           parent:this,
           component:PlayersTable,
           hasModalCard:false,
+          props:{'chosen':this.chosen},
           events:{
             'teste':function($event){
               el.selectPlayer($event)
@@ -254,6 +258,7 @@ export default {
               type:'is-success'
             })            
             this.$router.replace('/2019/'+ref.id)
+            window.scrollTo(0,0)
           })
         } catch (error) {
           console.log(error)
@@ -262,6 +267,7 @@ export default {
     },
     clearTops(){
       this.top={}
+      this.chosen=[]
       this.username=''
     },
     fetchData(item){
@@ -270,9 +276,18 @@ export default {
         this.isLoading = true
         db.collection('tops').doc(item).get().then(snapshot => {
           const data = snapshot.data()
-          el.top = data.tops
-          el.username = data.username
-          this.isLoading = false
+          if(data!==undefined){
+            el.top = data.tops
+            el.username = data.username
+            this.isLoading = false
+          } else {
+            el.$buefy.toast.open({
+              message:'Top 20 not found',
+              type:'is-danger'
+            })
+            this.isLoading = false
+            el.$router.replace('/')
+          }
         })
       }
     }
@@ -290,10 +305,23 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-.top-three .team_logo {
-  width:25px !important;
+.teste {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-evenly;
 }
+.col {
+  box-sizing: border-box;
+  min-width: 60px;
+  padding:10px;
+}
+.subpred {
+    font-style: italic;
+}
+
 .divisor {
+  margin-top:30px;
   margin-bottom:30px;
 }
 .divisor hr {
@@ -305,6 +333,8 @@ export default {
 }
 .top-three {
   margin-top:20px;
+  max-width: 500px;
+  margin:0 auto;
 }
 .by-user {
   font-size:1.3rem !important;
@@ -330,7 +360,7 @@ export default {
   margin-top:auto;
 }
 .players-pick {
-  max-width:500px !important;
+  max-width:600px !important;
   margin-top:40px !important;
 }
 .players-pick .column {

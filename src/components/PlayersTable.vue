@@ -12,19 +12,23 @@
             :pagination-simple="true"
             :mobile-cards="false"
             @select="selectPlayer"
+            :row-class ="(row,index) => chosen.includes(row.id) ===true && 'is-selected'"
         >
             <template slot-scope="props">
+                <b-table-column field="country" label="" width=30 sortable>
+                    <img class="image is-pulled-left flag-table" :src="props.row.country" />
+                </b-table-column>                
                 <b-table-column field="name" label="Player" width=90 searchable sortable>
-                    <img class="image is-pulled-left flag" :src="props.row.country" /> {{props.row.name}}
+                    {{props.row.name}}
                 </b-table-column>
                 <b-table-column field="team_name" label="Team" width=90 searchable sortable>
-                    <img class="image is-pulled-left is-24x24 flag" :src="props.row.team_logo" /> {{props.row.team_name}}
+                    <img class="image is-pulled-left is-24x24 team-logo-table" :src="props.row.team_logo" /> {{props.row.team_name}}
                 </b-table-column>
-                <b-table-column field="maps" label="Maps" width=90 numeric sortable>
-                    {{props.row.maps}}
-                </b-table-column>
-                <b-table-column field="rating" label="Rating" width=90 numeric sortable>
+                <b-table-column field="rating" label="Rating" width=30 numeric sortable>
                     <span :class="[{'negative':isNegative(props.row.rating)},'rating']">{{props.row.rating.toFixed(2)}}</span>
+                </b-table-column>                
+                <b-table-column field="maps" label="Maps" width=30 numeric sortable>
+                    {{props.row.maps}}
                 </b-table-column>
             </template>
         </b-table>
@@ -34,7 +38,7 @@
 <script>
 export default {
     name: 'PlayersTable',
-    props: ['position'],
+    props: ['chosen'],
     methods: {
         selectPlayer(item){
             this.$emit('teste',item)
@@ -4028,19 +4032,39 @@ export default {
     }
 }
 </script>
-<style scoped>
+<style>
+@media only screen and (max-width: 768px){
+    .b-table .table {
+        max-width:320px !important;
+        margin:0 auto;
+    }
+    .player-name {
+        font-size:0.8rem !important;
+    }
+    .flag-table {
+        max-width: 20px !important;
+        min-width: 20px !important;
+        margin-top:5px !important;
+    }    
+}
+    .table tr.is-selected td {
+        background-color:#232d38 !important;
+    }
     .players-table {
         max-width: 700px;
         margin:0 auto;
-    }
-    .flag {
-        width:32px;
-        padding:5px;
     }
     .rating {
         font-weight: bold;
     }
     .negative {
         color:darkred;
+    }
+    .flag-table {
+        max-width: 32px;
+        min-width: 32px;
+    }
+    .team-logo-table {
+        padding-right:5px;
     }
 </style>

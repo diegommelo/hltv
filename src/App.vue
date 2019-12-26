@@ -5,8 +5,43 @@
       <!-- <router-link to="/about">About</router-link> -->
     </div>
     <router-view/>
+    <footer>
+      <div class="content has-text-centered rodape">
+        <p class="has-text-light">made in 🇧🇷 by <a href="https://www.reddit.com/user/diegomelo1">/u/diegomelo1</a></p>
+        <p class="has-text-light">stats and images by <a href="https://hltv.org" target="_blank">HLTV.org</a> · all rights reserved</p>
+      </div>
+    </footer>
   </div>
 </template>
+
+<script>
+  export default {
+    name:'Principal',
+    head: {
+      title:{
+        inner:'Top 20 Simulator',
+        separator:' ',
+        complement:' '
+      },
+      meta: [
+        {name:'application-name',content:'Top 20 Simulator'},
+        {name:'description', content:'Make your Top 20 CS:GO players predictions'},
+        //Twitter
+        {name:'twitter:title', content:'Top 20 Simulator'},
+        {name:'twitter:description', content:'Make your Top 20 CS:GO Players predictions'},
+        // Google+ / Schema.org
+        { itemprop: 'name', content: 'Top 20 Simulator'},
+        { itemprop: 'description', content: 'Make your Top 20 CS:GO Players predictions' },
+        // ...
+        // Facebook / Open Graph
+        { property: 'og:title', content: 'Top 20 Simulator' },
+        { property: 'og:description', content:'Make your Top 20 CS:GO Players predictions'},
+        // with shorthand
+        { p: 'og:image', c: '/img/2019.png'},        
+      ]
+    }
+  }
+</script>
 
 <style>
 @import url('https://use.fontawesome.com/releases/v5.2.0/css/all.css');
@@ -22,7 +57,10 @@
 .title, .subtitle {
   color:#929a9e !important;
 }
-
+.rodape {
+  font-size:0.8rem;
+  padding-bottom:10px;
+}
 #nav {
   padding: 30px;
   color:#2c3e50;
@@ -32,6 +70,16 @@
   font-weight: bold;
   color: #2c3e50;
 }
+
+ a {
+   font-weight: bold;
+   color:#2c3e50 !important;
+ }
+
+ a:hover {
+   color:#929a9e !important;
+   font-weight: bold;
+ }
 
 /* #nav a.router-link-exact-active {
   color: #42b983;
