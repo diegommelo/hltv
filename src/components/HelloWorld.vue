@@ -175,14 +175,25 @@
           </div>          
         </div>                  
       </div> 
-      <div class="share">
+      <!-- <div v-if="item" class="share">
         <p class="share-it">Share:</p>
         <div class="share-buttons">
-          <i class="fab fa-facebook-square facebook"></i>     
-          <i class="fab fa-twitter-square twitter"></i>    
-          <i class="fas fa-link link"></i>                     
+          <a target="_blank">
+            <span class="fa-stack fa-2x facebook">
+              <i class="fas fa-square fa-stack-2x"></i>
+              <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+            </span>   
+          </a>
+          <span class="fa-stack fa-2x twitter">
+            <i class="fas fa-square fa-stack-2x"></i>
+            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+          </span>  
+          <span class="fa-stack fa-2x link">
+            <i class="fas fa-square fa-stack-2x"></i>
+            <i class="fa fa-link fa-stack-1x fa-inverse"></i>
+          </span>          
         </div>
-      </div>      
+      </div>       -->
       <div v-if="!item" class="username">
         <b-input v-model="username" placeholder="Username" maxlength="50"></b-input>
       </div>
@@ -314,14 +325,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+.fa-stack {
+  font-size:1.2rem;
+}
 .share {
   margin-top:10px;
   margin-bottom:10px;
   color:#929a9e;
 }
-.share-buttons i {
-  padding:10px;
-  font-size:30px;
+.share-buttons {
+  margin-top:5px;
+}
+.share-buttons span {
+  margin-left:8px;
 }
 .share .facebook {
   color:#3b5998;
