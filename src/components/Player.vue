@@ -1,11 +1,11 @@
 <template>
     <div class="player-select">
         <div>
-            <img v-if="player" :src="player.team_logo" class="team_logo is-pulled-right" :alt="player.team_name" />
+            <img v-if="player" :src="player.team_logo" class="team_logo is-pulled-right" :title="player.team_name" :alt="player.team_name" />
             <figure class="image">
                 <lazy-img v-bind:class="['avatar','image',size]" v-if="player" :src="'https://static.hltv.org/images/playerprofile/thumb/'+player.id+'/400.jpeg?v=4'" placeholder="/img/loading.gif" />
                 <lazy-img v-bind:class="['avatar','image',size]" v-else src="/img/undefined.png" />                    
-                <img v-if="player" :src="player.country" class="flag" />                                   
+                <img v-if="player" :src="player.country" class="flag" :alt="player.country_name" :title="player.country_name" />                                   
             </figure>
         </div>
         <p v-if="player" class="player-name">{{player.name}}</p>

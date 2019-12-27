@@ -16,7 +16,7 @@
         >
             <template slot-scope="props">
                 <b-table-column field="country" label="" width=30 sortable>
-                    <img class="image is-pulled-left flag-table" :src="props.row.country" />
+                    <img class="image is-pulled-left flag-table" :src="props.row.country" :alt="props.row.country_name" :title="props.row.country_name" />
                 </b-table-column>                
                 <b-table-column field="name" label="Player" width=90 searchable sortable>
                     {{props.row.name}}
@@ -61,6 +61,7 @@ export default {
     {
         "name": "ZywOo",
         "country": "https://static.hltv.org/images/bigflags/30x20/FR.gif",
+        "country_name": "France",
         "id": 11893,
         "team_name": "Vitality",
         "team_logo": "https://static.hltv.org/images/team/logo/9565",
@@ -70,6 +71,7 @@ export default {
     {
         "name": "s1mple",
         "country": "https://static.hltv.org/images/bigflags/30x20/UA.gif",
+        "country_name": "Ukraine",
         "id": 7998,
         "team_name": "Natus Vincere",
         "team_logo": "https://static.hltv.org/images/team/logo/4608",
@@ -79,6 +81,7 @@ export default {
     {
         "name": "sh1ro",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 16920,
         "team_name": "Gambit Youngsters",
         "team_logo": "https://static.hltv.org/images/team/logo/9976",
@@ -88,6 +91,7 @@ export default {
     {
         "name": "Kaze",
         "country": "https://static.hltv.org/images/bigflags/30x20/MY.gif",
+        "country_name": "Malaysia",
         "id": 8950,
         "team_name": "ViCi",
         "team_logo": "https://static.hltv.org/images/team/logo/7606",
@@ -97,6 +101,7 @@ export default {
     {
         "name": "Jame",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 13776,
         "team_name": "AVANGAR",
         "team_logo": "https://static.hltv.org/images/team/logo/8120",
@@ -106,6 +111,7 @@ export default {
     {
         "name": "splashske",
         "country": "https://static.hltv.org/images/bigflags/30x20/SG.gif",
+        "country_name": "Singapore",
         "id": 8943,
         "team_name": "BOOT",
         "team_logo": "https://static.hltv.org/images/team/logo/6898",
@@ -115,15 +121,17 @@ export default {
     {
         "name": "Jamppi",
         "country": "https://static.hltv.org/images/bigflags/30x20/FI.gif",
+        "country_name": "Finland",
         "id": 14087,
         "team_name": "SJ",
         "team_logo": "https://static.hltv.org/images/team/logo/8504",
-        "maps": 248,
+        "maps": 250,
         "rating": 1.23
     },
     {
         "name": "vsm",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 16816,
         "team_name": "DETONA",
         "team_logo": "https://static.hltv.org/images/team/logo/8902",
@@ -133,6 +141,7 @@ export default {
     {
         "name": "huNter-",
         "country": "https://static.hltv.org/images/bigflags/30x20/RS.gif",
+        "country_name": "Serbia",
         "id": 3972,
         "team_name": "G2",
         "team_logo": "https://static.hltv.org/images/team/logo/5995",
@@ -142,6 +151,7 @@ export default {
     {
         "name": "device",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 7592,
         "team_name": "Astralis",
         "team_logo": "https://static.hltv.org/images/team/logo/6665",
@@ -151,6 +161,7 @@ export default {
     {
         "name": "Sico",
         "country": "https://static.hltv.org/images/bigflags/30x20/NZ.gif",
+        "country_name": "New Zealand",
         "id": 9102,
         "team_name": "Grayhound",
         "team_logo": "https://static.hltv.org/images/team/logo/8008",
@@ -160,6 +171,7 @@ export default {
     {
         "name": "dexter",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 9115,
         "team_name": "Grayhound",
         "team_logo": "https://static.hltv.org/images/team/logo/8008",
@@ -169,6 +181,7 @@ export default {
     {
         "name": "Benkai",
         "country": "https://static.hltv.org/images/bigflags/30x20/SG.gif",
+        "country_name": "Singapore",
         "id": 8944,
         "team_name": "BOOT",
         "team_logo": "https://static.hltv.org/images/team/logo/6898",
@@ -178,6 +191,7 @@ export default {
     {
         "name": "meyern",
         "country": "https://static.hltv.org/images/bigflags/30x20/AR.gif",
+        "country_name": "Argentina",
         "id": 14737,
         "team_name": "Isurus",
         "team_logo": "https://static.hltv.org/images/team/logo/7653",
@@ -187,6 +201,7 @@ export default {
     {
         "name": "electronic",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 8918,
         "team_name": "Natus Vincere",
         "team_logo": "https://static.hltv.org/images/team/logo/4608",
@@ -196,6 +211,7 @@ export default {
     {
         "name": "EliGE",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 8738,
         "team_name": "Liquid",
         "team_logo": "https://static.hltv.org/images/team/logo/5973",
@@ -205,6 +221,7 @@ export default {
     {
         "name": "xsepower",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 12733,
         "team_name": "forZe",
         "team_logo": "https://static.hltv.org/images/team/logo/8135",
@@ -214,6 +231,7 @@ export default {
     {
         "name": "INS",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 11140,
         "team_name": "ORDER",
         "team_logo": "https://static.hltv.org/images/team/logo/8668",
@@ -223,6 +241,7 @@ export default {
     {
         "name": "Hatz",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 11162,
         "team_name": "ORDER",
         "team_logo": "https://static.hltv.org/images/team/logo/8668",
@@ -232,6 +251,7 @@ export default {
     {
         "name": "aliStair",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 11139,
         "team_name": "ORDER",
         "team_logo": "https://static.hltv.org/images/team/logo/8668",
@@ -241,6 +261,7 @@ export default {
     {
         "name": "mantuu",
         "country": "https://static.hltv.org/images/bigflags/30x20/GB.gif",
+        "country_name": "United Kingdom",
         "id": 10981,
         "team_name": "ALTERNATE aTTaX",
         "team_logo": "https://static.hltv.org/images/team/logo/4501",
@@ -250,6 +271,7 @@ export default {
     {
         "name": "BnTeT",
         "country": "https://static.hltv.org/images/bigflags/30x20/ID.gif",
+        "country_name": "Indonesia",
         "id": 7131,
         "team_name": "TYLOO",
         "team_logo": "https://static.hltv.org/images/team/logo/4863",
@@ -259,6 +281,7 @@ export default {
     {
         "name": "ropz",
         "country": "https://static.hltv.org/images/bigflags/30x20/EE.gif",
+        "country_name": "Estonia",
         "id": 11816,
         "team_name": "mousesports",
         "team_logo": "https://static.hltv.org/images/team/logo/4494",
@@ -268,6 +291,7 @@ export default {
     {
         "name": "floppy",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 12713,
         "team_name": "ATK",
         "team_logo": "https://static.hltv.org/images/team/logo/9943",
@@ -277,6 +301,7 @@ export default {
     {
         "name": "KSCERATO",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 15631,
         "team_name": "FURIA",
         "team_logo": "https://static.hltv.org/images/team/logo/8297",
@@ -286,6 +311,7 @@ export default {
     {
         "name": "PTC",
         "country": "https://static.hltv.org/images/bigflags/30x20/TH.gif",
+        "country_name": "Thailand",
         "id": 13238,
         "team_name": "Lucid Dream",
         "team_logo": "https://static.hltv.org/images/team/logo/8680",
@@ -295,6 +321,7 @@ export default {
     {
         "name": "Brehze",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 9136,
         "team_name": "Evil Geniuses",
         "team_logo": "https://static.hltv.org/images/team/logo/10399",
@@ -304,6 +331,7 @@ export default {
     {
         "name": "d4v41",
         "country": "https://static.hltv.org/images/bigflags/30x20/MY.gif",
+        "country_name": "Malaysia",
         "id": 13476,
         "team_name": "BOOT",
         "team_logo": "https://static.hltv.org/images/team/logo/6898",
@@ -313,6 +341,7 @@ export default {
     {
         "name": "blameF",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 15165,
         "team_name": "Complexity",
         "team_logo": "https://static.hltv.org/images/team/logo/5005",
@@ -322,6 +351,7 @@ export default {
     {
         "name": "Bubzkji",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 9612,
         "team_name": "Tricked",
         "team_logo": "https://static.hltv.org/images/team/logo/4602",
@@ -331,6 +361,7 @@ export default {
     {
         "name": "NAF",
         "country": "https://static.hltv.org/images/bigflags/30x20/CA.gif",
+        "country_name": "Canada",
         "id": 8520,
         "team_name": "Liquid",
         "team_logo": "https://static.hltv.org/images/team/logo/5973",
@@ -340,6 +371,7 @@ export default {
     {
         "name": "yuurih",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 12553,
         "team_name": "FURIA",
         "team_logo": "https://static.hltv.org/images/team/logo/8297",
@@ -349,6 +381,7 @@ export default {
     {
         "name": "roeJ",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 14419,
         "team_name": "Copenhagen Flames",
         "team_logo": "https://static.hltv.org/images/team/logo/7461",
@@ -358,6 +391,7 @@ export default {
     {
         "name": "ZOREE",
         "country": "https://static.hltv.org/images/bigflags/30x20/FI.gif",
+        "country_name": "Finland",
         "id": 8576,
         "team_name": "HAVU",
         "team_logo": "https://static.hltv.org/images/team/logo/7865",
@@ -367,6 +401,7 @@ export default {
     {
         "name": "erkaSt",
         "country": "https://static.hltv.org/images/bigflags/30x20/MN.gif",
+        "country_name": "Mongolia",
         "id": 11141,
         "team_name": "AUGUST",
         "team_logo": "https://static.hltv.org/images/team/logo/10328",
@@ -376,6 +411,7 @@ export default {
     {
         "name": "SLOWLY",
         "country": "https://static.hltv.org/images/bigflags/30x20/CN.gif",
+        "country_name": "China",
         "id": 15683,
         "team_name": "EHOME",
         "team_logo": "https://static.hltv.org/images/team/logo/7024",
@@ -385,6 +421,7 @@ export default {
     {
         "name": "Magisk",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 9032,
         "team_name": "Astralis",
         "team_logo": "https://static.hltv.org/images/team/logo/6665",
@@ -394,6 +431,7 @@ export default {
     {
         "name": "Infinite",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 14619,
         "team_name": "Lazarus",
         "team_logo": "https://static.hltv.org/images/team/logo/9945",
@@ -403,15 +441,17 @@ export default {
     {
         "name": "degster",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 17306,
         "team_name": "Espada",
         "team_logo": "https://static.hltv.org/images/team/logo/8669",
-        "maps": 115,
+        "maps": 119,
         "rating": 1.17
     },
     {
         "name": "dycha",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 16080,
         "team_name": "Aristocracy",
         "team_logo": "https://static.hltv.org/images/team/logo/10020",
@@ -421,6 +461,7 @@ export default {
     {
         "name": "poizon",
         "country": "https://static.hltv.org/images/bigflags/30x20/BG.gif",
+        "country_name": "Bulgaria",
         "id": 12126,
         "team_name": "Windigo",
         "team_logo": "https://static.hltv.org/images/team/logo/8513",
@@ -430,6 +471,7 @@ export default {
     {
         "name": "frozen",
         "country": "https://static.hltv.org/images/bigflags/30x20/SK.gif",
+        "country_name": "Slovakia",
         "id": 9960,
         "team_name": "mousesports",
         "team_logo": "https://static.hltv.org/images/team/logo/4494",
@@ -439,6 +481,7 @@ export default {
     {
         "name": "Olivia",
         "country": "https://static.hltv.org/images/bigflags/30x20/TH.gif",
+        "country_name": "Thailand",
         "id": 10664,
         "team_name": "Alpha Red",
         "team_logo": "https://static.hltv.org/images/team/logo/8848",
@@ -448,6 +491,7 @@ export default {
     {
         "name": "Texta",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 11847,
         "team_name": "Chiefs",
         "team_logo": "https://static.hltv.org/images/team/logo/6010",
@@ -457,6 +501,7 @@ export default {
     {
         "name": "woxic",
         "country": "https://static.hltv.org/images/bigflags/30x20/TR.gif",
+        "country_name": "Turkey",
         "id": 8574,
         "team_name": "mousesports",
         "team_logo": "https://static.hltv.org/images/team/logo/4494",
@@ -466,6 +511,7 @@ export default {
     {
         "name": "syrsoN",
         "country": "https://static.hltv.org/images/bigflags/30x20/DE.gif",
+        "country_name": "Germany",
         "id": 7266,
         "team_name": "Sprout",
         "team_logo": "https://static.hltv.org/images/team/logo/8637",
@@ -473,17 +519,9 @@ export default {
         "rating": 1.16
     },
     {
-        "name": "V4D1M",
-        "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
-        "id": 11580,
-        "team_name": "Invictus",
-        "team_logo": "https://static.hltv.org/images/team/logo/7966",
-        "maps": 140,
-        "rating": 1.16
-    },
-    {
         "name": "NiKo",
         "country": "https://static.hltv.org/images/bigflags/30x20/BA.gif",
+        "country_name": "Bosnia and Herzegovina",
         "id": 3741,
         "team_name": "FaZe",
         "team_logo": "https://static.hltv.org/images/team/logo/6667",
@@ -493,6 +531,7 @@ export default {
     {
         "name": "biguzera",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 18141,
         "team_name": "paiN",
         "team_logo": "https://static.hltv.org/images/team/logo/4773",
@@ -502,6 +541,7 @@ export default {
     {
         "name": "jks",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 4679,
         "team_name": "100 Thieves",
         "team_logo": "https://static.hltv.org/images/team/logo/8474",
@@ -511,6 +551,7 @@ export default {
     {
         "name": "hardzao",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 16817,
         "team_name": "paiN",
         "team_logo": "https://static.hltv.org/images/team/logo/4773",
@@ -520,6 +561,7 @@ export default {
     {
         "name": "ofnu",
         "country": "https://static.hltv.org/images/bigflags/30x20/NZ.gif",
+        "country_name": "New Zealand",
         "id": 8767,
         "team_name": "Chiefs",
         "team_logo": "https://static.hltv.org/images/team/logo/6010",
@@ -529,6 +571,7 @@ export default {
     {
         "name": "ptr",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 8707,
         "team_name": "Riot Squad",
         "team_logo": "https://static.hltv.org/images/team/logo/10164",
@@ -536,8 +579,19 @@ export default {
         "rating": 1.16
     },
     {
+        "name": "V4D1M",
+        "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
+        "id": 11580,
+        "team_name": "Invictus",
+        "team_logo": "https://static.hltv.org/images/team/logo/7966",
+        "maps": 148,
+        "rating": 1.15
+    },
+    {
         "name": "somedieyoung",
         "country": "https://static.hltv.org/images/bigflags/30x20/UA.gif",
+        "country_name": "Ukraine",
         "id": 12731,
         "team_name": "Spirit",
         "team_logo": "https://static.hltv.org/images/team/logo/7020",
@@ -547,6 +601,7 @@ export default {
     {
         "name": "TenZ",
         "country": "https://static.hltv.org/images/bigflags/30x20/CA.gif",
+        "country_name": "Canada",
         "id": 13254,
         "team_name": "Bad News Bears",
         "team_logo": "https://static.hltv.org/images/team/logo/9799",
@@ -556,6 +611,7 @@ export default {
     {
         "name": "trk",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 11163,
         "team_name": "TeamOne",
         "team_logo": "https://static.hltv.org/images/team/logo/6947",
@@ -565,6 +621,7 @@ export default {
     {
         "name": "hallzerk",
         "country": "https://static.hltv.org/images/bigflags/30x20/NO.gif",
+        "country_name": "Norway",
         "id": 12840,
         "team_name": "Nordavind",
         "team_logo": "https://static.hltv.org/images/team/logo/8769",
@@ -574,6 +631,7 @@ export default {
     {
         "name": "nexa",
         "country": "https://static.hltv.org/images/bigflags/30x20/RS.gif",
+        "country_name": "Serbia",
         "id": 9618,
         "team_name": "G2",
         "team_logo": "https://static.hltv.org/images/team/logo/5995",
@@ -583,6 +641,7 @@ export default {
     {
         "name": "coldzera",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 9216,
         "team_name": "FaZe",
         "team_logo": "https://static.hltv.org/images/team/logo/6667",
@@ -592,6 +651,7 @@ export default {
     {
         "name": "crashies",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 13278,
         "team_name": "Riot Squad",
         "team_logo": "https://static.hltv.org/images/team/logo/10164",
@@ -601,6 +661,7 @@ export default {
     {
         "name": "pancc",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 16314,
         "team_name": "W7M",
         "team_logo": "https://static.hltv.org/images/team/logo/8574",
@@ -610,6 +671,7 @@ export default {
     {
         "name": "HaZR",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 14294,
         "team_name": "AVANT",
         "team_logo": "https://static.hltv.org/images/team/logo/5293",
@@ -619,6 +681,7 @@ export default {
     {
         "name": "moose",
         "country": "https://static.hltv.org/images/bigflags/30x20/CA.gif",
+        "country_name": "Canada",
         "id": 12271,
         "team_name": "eUnited",
         "team_logo": "https://static.hltv.org/images/team/logo/7106",
@@ -628,6 +691,7 @@ export default {
     {
         "name": "tabseN",
         "country": "https://static.hltv.org/images/bigflags/30x20/DE.gif",
+        "country_name": "Germany",
         "id": 5794,
         "team_name": "BIG",
         "team_logo": "https://static.hltv.org/images/team/logo/7532",
@@ -637,6 +701,7 @@ export default {
     {
         "name": "rallen",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 5388,
         "team_name": "ARCY",
         "team_logo": "https://static.hltv.org/images/team/logo/10494",
@@ -646,6 +711,7 @@ export default {
     {
         "name": "FREDDyFROG",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 9277,
         "team_name": "Chaos",
         "team_logo": "https://static.hltv.org/images/team/logo/9085",
@@ -655,6 +721,7 @@ export default {
     {
         "name": "kennyS",
         "country": "https://static.hltv.org/images/bigflags/30x20/FR.gif",
+        "country_name": "France",
         "id": 7167,
         "team_name": "G2",
         "team_logo": "https://static.hltv.org/images/team/logo/5995",
@@ -664,6 +731,7 @@ export default {
     {
         "name": "shz",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 11739,
         "team_name": "INTZ",
         "team_logo": "https://static.hltv.org/images/team/logo/6619",
@@ -671,17 +739,9 @@ export default {
         "rating": 1.14
     },
     {
-        "name": "Koshak",
-        "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
-        "id": 11133,
-        "team_name": "Invictus",
-        "team_logo": "https://static.hltv.org/images/team/logo/7966",
-        "maps": 132,
-        "rating": 1.14
-    },
-    {
         "name": "Twistzz",
         "country": "https://static.hltv.org/images/bigflags/30x20/CA.gif",
+        "country_name": "Canada",
         "id": 10394,
         "team_name": "Liquid",
         "team_logo": "https://static.hltv.org/images/team/logo/5973",
@@ -691,6 +751,7 @@ export default {
     {
         "name": "wrath",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 9884,
         "team_name": "New Identity",
         "team_logo": "https://static.hltv.org/images/team/logo/10080",
@@ -698,8 +759,19 @@ export default {
         "rating": 1.14
     },
     {
+        "name": "dennyslaw",
+        "country": "https://static.hltv.org/images/bigflags/30x20/BG.gif",
+        "country_name": "Bulgaria",
+        "id": 13466,
+        "team_name": "SKADE",
+        "team_logo": "https://static.hltv.org/images/team/logo/10386",
+        "maps": 142,
+        "rating": 1.14
+    },
+    {
         "name": "XANTARES",
         "country": "https://static.hltv.org/images/bigflags/30x20/TR.gif",
+        "country_name": "Turkey",
         "id": 7938,
         "team_name": "BIG",
         "team_logo": "https://static.hltv.org/images/team/logo/7532",
@@ -709,6 +781,7 @@ export default {
     {
         "name": "nawwk",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 13670,
         "team_name": "GamerLegion",
         "team_logo": "https://static.hltv.org/images/team/logo/9928",
@@ -718,6 +791,7 @@ export default {
     {
         "name": "somebody",
         "country": "https://static.hltv.org/images/bigflags/30x20/CN.gif",
+        "country_name": "China",
         "id": 8605,
         "team_name": "TYLOO",
         "team_logo": "https://static.hltv.org/images/team/logo/4863",
@@ -727,6 +801,7 @@ export default {
     {
         "name": "TENZKI",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 5287,
         "team_name": "Nordavind",
         "team_logo": "https://static.hltv.org/images/team/logo/8769",
@@ -734,8 +809,19 @@ export default {
         "rating": 1.13
     },
     {
+        "name": "Koshak",
+        "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
+        "id": 11133,
+        "team_name": "Invictus",
+        "team_logo": "https://static.hltv.org/images/team/logo/7966",
+        "maps": 140,
+        "rating": 1.13
+    },
+    {
         "name": "Ethan",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 10671,
         "team_name": "Evil Geniuses",
         "team_logo": "https://static.hltv.org/images/team/logo/10399",
@@ -743,8 +829,19 @@ export default {
         "rating": 1.13
     },
     {
+        "name": "lollipop21k",
+        "country": "https://static.hltv.org/images/bigflags/30x20/BY.gif",
+        "country_name": "Belarus",
+        "id": 13980,
+        "team_name": "Nemiga",
+        "team_logo": "https://static.hltv.org/images/team/logo/7969",
+        "maps": 327,
+        "rating": 1.13
+    },
+    {
         "name": "CeRq",
         "country": "https://static.hltv.org/images/bigflags/30x20/BG.gif",
+        "country_name": "Bulgaria",
         "id": 11219,
         "team_name": "Evil Geniuses",
         "team_logo": "https://static.hltv.org/images/team/logo/10399",
@@ -752,17 +849,9 @@ export default {
         "rating": 1.13
     },
     {
-        "name": "lollipop21k",
-        "country": "https://static.hltv.org/images/bigflags/30x20/BY.gif",
-        "id": 13980,
-        "team_name": "Nemiga",
-        "team_logo": "https://static.hltv.org/images/team/logo/7969",
-        "maps": 326,
-        "rating": 1.13
-    },
-    {
         "name": "smooya",
         "country": "https://static.hltv.org/images/bigflags/30x20/GB.gif",
+        "country_name": "United Kingdom",
         "id": 11271,
         "team_name": "BIG",
         "team_logo": "https://static.hltv.org/images/team/logo/7532",
@@ -772,6 +861,7 @@ export default {
     {
         "name": "mixwell",
         "country": "https://static.hltv.org/images/bigflags/30x20/ES.gif",
+        "country_name": "Spain",
         "id": 8370,
         "team_name": "Movistar Riders",
         "team_logo": "https://static.hltv.org/images/team/logo/7718",
@@ -781,6 +871,7 @@ export default {
     {
         "name": "Maden",
         "country": "https://static.hltv.org/images/bigflags/30x20/RS.gif",
+        "country_name": "Serbia",
         "id": 11777,
         "team_name": "GODSENT",
         "team_logo": "https://static.hltv.org/images/team/logo/6902",
@@ -790,6 +881,7 @@ export default {
     {
         "name": "MarKE",
         "country": "https://static.hltv.org/images/bigflags/30x20/MX.gif",
+        "country_name": "Mexico",
         "id": 10892,
         "team_name": "eUnited",
         "team_logo": "https://static.hltv.org/images/team/logo/7106",
@@ -799,6 +891,7 @@ export default {
     {
         "name": "sergej",
         "country": "https://static.hltv.org/images/bigflags/30x20/FI.gif",
+        "country_name": "Finland",
         "id": 11916,
         "team_name": "ENCE",
         "team_logo": "https://static.hltv.org/images/team/logo/4869",
@@ -806,17 +899,9 @@ export default {
         "rating": 1.13
     },
     {
-        "name": "dennyslaw",
-        "country": "https://static.hltv.org/images/bigflags/30x20/BG.gif",
-        "id": 13466,
-        "team_name": "SKADE",
-        "team_logo": "https://static.hltv.org/images/team/logo/10386",
-        "maps": 133,
-        "rating": 1.13
-    },
-    {
         "name": "acoR",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 10330,
         "team_name": "Tricked",
         "team_logo": "https://static.hltv.org/images/team/logo/4602",
@@ -826,6 +911,7 @@ export default {
     {
         "name": "ottoNd",
         "country": "https://static.hltv.org/images/bigflags/30x20/FI.gif",
+        "country_name": "Finland",
         "id": 11283,
         "team_name": "CR4ZY",
         "team_logo": "https://static.hltv.org/images/team/logo/10150",
@@ -835,6 +921,7 @@ export default {
     {
         "name": "Plopski",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 14218,
         "team_name": "NiP",
         "team_logo": "https://static.hltv.org/images/team/logo/4411",
@@ -844,6 +931,7 @@ export default {
     {
         "name": "motm",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 13230,
         "team_name": "ATK",
         "team_logo": "https://static.hltv.org/images/team/logo/9943",
@@ -853,6 +941,7 @@ export default {
     {
         "name": "kNgV-",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 5736,
         "team_name": "MIBR",
         "team_logo": "https://static.hltv.org/images/team/logo/9215",
@@ -862,6 +951,7 @@ export default {
     {
         "name": "qikert",
         "country": "https://static.hltv.org/images/bigflags/30x20/KZ.gif",
+        "country_name": "Kazakhstan",
         "id": 13239,
         "team_name": "AVANGAR",
         "team_logo": "https://static.hltv.org/images/team/logo/8120",
@@ -871,6 +961,7 @@ export default {
     {
         "name": "Farlig",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 13300,
         "team_name": "Copenhagen Flames",
         "team_logo": "https://static.hltv.org/images/team/logo/7461",
@@ -880,6 +971,7 @@ export default {
     {
         "name": "xCeeD",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 13182,
         "team_name": "Triumph",
         "team_logo": "https://static.hltv.org/images/team/logo/10304",
@@ -889,6 +981,7 @@ export default {
     {
         "name": "Kntz",
         "country": "https://static.hltv.org/images/bigflags/30x20/TH.gif",
+        "country_name": "Thailand",
         "id": 10705,
         "team_name": "Alpha Red",
         "team_logo": "https://static.hltv.org/images/team/logo/8848",
@@ -898,6 +991,7 @@ export default {
     {
         "name": "stavn",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 10994,
         "team_name": "Heroic",
         "team_logo": "https://static.hltv.org/images/team/logo/7175",
@@ -907,6 +1001,7 @@ export default {
     {
         "name": "dupreeh",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 7398,
         "team_name": "Astralis",
         "team_logo": "https://static.hltv.org/images/team/logo/6665",
@@ -914,8 +1009,19 @@ export default {
         "rating": 1.12
     },
     {
+        "name": "Thomas",
+        "country": "https://static.hltv.org/images/bigflags/30x20/GB.gif",
+        "country_name": "United Kingdom",
+        "id": 13018,
+        "team_name": "Phoenix",
+        "team_logo": "https://static.hltv.org/images/team/logo/10420",
+        "maps": 180,
+        "rating": 1.12
+    },
+    {
         "name": "El1an",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 13281,
         "team_name": "Winstrike",
         "team_logo": "https://static.hltv.org/images/team/logo/9183",
@@ -925,6 +1031,7 @@ export default {
     {
         "name": "nukkye",
         "country": "https://static.hltv.org/images/bigflags/30x20/LT.gif",
+        "country_name": "Lithuania",
         "id": 13679,
         "team_name": "HellRaisers",
         "team_logo": "https://static.hltv.org/images/team/logo/5310",
@@ -934,6 +1041,7 @@ export default {
     {
         "name": "Sonic",
         "country": "https://static.hltv.org/images/bigflags/30x20/ZA.gif",
+        "country_name": "South Africa",
         "id": 8711,
         "team_name": "ATK",
         "team_logo": "https://static.hltv.org/images/team/logo/9943",
@@ -941,17 +1049,9 @@ export default {
         "rating": 1.12
     },
     {
-        "name": "Thomas",
-        "country": "https://static.hltv.org/images/bigflags/30x20/GB.gif",
-        "id": 13018,
-        "team_name": "Phoenix",
-        "team_logo": "https://static.hltv.org/images/team/logo/10420",
-        "maps": 178,
-        "rating": 1.12
-    },
-    {
         "name": "oSee",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 13249,
         "team_name": "ATK",
         "team_logo": "https://static.hltv.org/images/team/logo/9943",
@@ -961,6 +1061,7 @@ export default {
     {
         "name": "Brollan",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 13666,
         "team_name": "fnatic",
         "team_logo": "https://static.hltv.org/images/team/logo/4991",
@@ -970,6 +1071,7 @@ export default {
     {
         "name": "allu",
         "country": "https://static.hltv.org/images/bigflags/30x20/FI.gif",
+        "country_name": "Finland",
         "id": 695,
         "team_name": "ENCE",
         "team_logo": "https://static.hltv.org/images/team/logo/4869",
@@ -979,6 +1081,7 @@ export default {
     {
         "name": "zeph",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 13054,
         "team_name": "Ground Zero",
         "team_logo": "https://static.hltv.org/images/team/logo/8536",
@@ -988,6 +1091,7 @@ export default {
     {
         "name": "jkaem",
         "country": "https://static.hltv.org/images/bigflags/30x20/NO.gif",
+        "country_name": "Norway",
         "id": 8248,
         "team_name": "100 Thieves",
         "team_logo": "https://static.hltv.org/images/team/logo/8474",
@@ -997,6 +1101,7 @@ export default {
     {
         "name": "Xyp9x",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 4954,
         "team_name": "Astralis",
         "team_logo": "https://static.hltv.org/images/team/logo/6665",
@@ -1006,6 +1111,7 @@ export default {
     {
         "name": "hAdji",
         "country": "https://static.hltv.org/images/bigflags/30x20/FR.gif",
+        "country_name": "France",
         "id": 9656,
         "team_name": "3DMAX",
         "team_logo": "https://static.hltv.org/images/team/logo/4914",
@@ -1015,6 +1121,7 @@ export default {
     {
         "name": "boltz",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 8568,
         "team_name": "INTZ",
         "team_logo": "https://static.hltv.org/images/team/logo/6619",
@@ -1024,6 +1131,7 @@ export default {
     {
         "name": "Noktse",
         "country": "https://static.hltv.org/images/bigflags/30x20/AR.gif",
+        "country_name": "Argentina",
         "id": 2161,
         "team_name": "Isurus",
         "team_logo": "https://static.hltv.org/images/team/logo/7653",
@@ -1031,8 +1139,19 @@ export default {
         "rating": 1.11
     },
     {
+        "name": "dEE",
+        "country": "https://static.hltv.org/images/bigflags/30x20/RS.gif",
+        "country_name": "Serbia",
+        "id": 4576,
+        "team_name": "Juggernauts",
+        "team_logo": "https://static.hltv.org/images/team/logo/10509",
+        "maps": 125,
+        "rating": 1.11
+    },
+    {
         "name": "Summer",
         "country": "https://static.hltv.org/images/bigflags/30x20/CN.gif",
+        "country_name": "China",
         "id": 7028,
         "team_name": "TYLOO",
         "team_logo": "https://static.hltv.org/images/team/logo/4863",
@@ -1042,6 +1161,7 @@ export default {
     {
         "name": "PKL",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 6593,
         "team_name": "paiN",
         "team_logo": "https://static.hltv.org/images/team/logo/4773",
@@ -1051,6 +1171,7 @@ export default {
     {
         "name": "Subroza",
         "country": "https://static.hltv.org/images/bigflags/30x20/CA.gif",
+        "country_name": "Canada",
         "id": 11231,
         "team_name": "Lazarus",
         "team_logo": "https://static.hltv.org/images/team/logo/9945",
@@ -1058,8 +1179,19 @@ export default {
         "rating": 1.11
     },
     {
+        "name": "CRUC1AL",
+        "country": "https://static.hltv.org/images/bigflags/30x20/NL.gif",
+        "country_name": "Netherlands",
+        "id": 7996,
+        "team_name": "Phoenix",
+        "team_logo": "https://static.hltv.org/images/team/logo/10420",
+        "maps": 290,
+        "rating": 1.11
+    },
+    {
         "name": "Cooper-",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 15007,
         "team_name": "eUnited",
         "team_logo": "https://static.hltv.org/images/team/logo/7106",
@@ -1069,6 +1201,7 @@ export default {
     {
         "name": "zemp",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 12999,
         "team_name": "Ground Zero",
         "team_logo": "https://static.hltv.org/images/team/logo/8536",
@@ -1078,6 +1211,7 @@ export default {
     {
         "name": "MAIROLLS",
         "country": "https://static.hltv.org/images/bigflags/30x20/TH.gif",
+        "country_name": "Thailand",
         "id": 10666,
         "team_name": "Alpha Red",
         "team_logo": "https://static.hltv.org/images/team/logo/8848",
@@ -1087,6 +1221,7 @@ export default {
     {
         "name": "Lack1",
         "country": "https://static.hltv.org/images/bigflags/30x20/KZ.gif",
+        "country_name": "Kazakhstan",
         "id": 13240,
         "team_name": "Winstrike",
         "team_logo": "https://static.hltv.org/images/team/logo/9183",
@@ -1096,6 +1231,7 @@ export default {
     {
         "name": "mitch",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 10470,
         "team_name": "Riot Squad",
         "team_logo": "https://static.hltv.org/images/team/logo/10164",
@@ -1105,6 +1241,7 @@ export default {
     {
         "name": "b0RUP",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 9896,
         "team_name": "Heroic",
         "team_logo": "https://static.hltv.org/images/team/logo/7175",
@@ -1112,17 +1249,9 @@ export default {
         "rating": 1.11
     },
     {
-        "name": "CRUC1AL",
-        "country": "https://static.hltv.org/images/bigflags/30x20/NL.gif",
-        "id": 7996,
-        "team_name": "Phoenix",
-        "team_logo": "https://static.hltv.org/images/team/logo/10420",
-        "maps": 288,
-        "rating": 1.11
-    },
-    {
         "name": "YEKINDAR",
         "country": "https://static.hltv.org/images/bigflags/30x20/LV.gif",
+        "country_name": "Latvia",
         "id": 13915,
         "team_name": "pro100",
         "team_logo": "https://static.hltv.org/images/team/logo/7898",
@@ -1132,6 +1261,7 @@ export default {
     {
         "name": "iDISBALANCE",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 14273,
         "team_name": "Spirit",
         "team_logo": "https://static.hltv.org/images/team/logo/7020",
@@ -1141,6 +1271,7 @@ export default {
     {
         "name": "draken",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 9255,
         "team_name": "Ancient",
         "team_logo": "https://static.hltv.org/images/team/logo/6685",
@@ -1150,6 +1281,7 @@ export default {
     {
         "name": "valde",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 9031,
         "team_name": "North",
         "team_logo": "https://static.hltv.org/images/team/logo/7533",
@@ -1159,6 +1291,7 @@ export default {
     {
         "name": "fer",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 8564,
         "team_name": "MIBR",
         "team_logo": "https://static.hltv.org/images/team/logo/9215",
@@ -1166,17 +1299,9 @@ export default {
         "rating": 1.11
     },
     {
-        "name": "dEE",
-        "country": "https://static.hltv.org/images/bigflags/30x20/RS.gif",
-        "id": 4576,
-        "team_name": "Juggernauts",
-        "team_logo": "https://static.hltv.org/images/team/logo/10509",
-        "maps": 120,
-        "rating": 1.11
-    },
-    {
         "name": "SHiPZ",
         "country": "https://static.hltv.org/images/bigflags/30x20/BG.gif",
+        "country_name": "Bulgaria",
         "id": 11343,
         "team_name": "CR4ZY",
         "team_logo": "https://static.hltv.org/images/team/logo/10150",
@@ -1186,6 +1311,7 @@ export default {
     {
         "name": "PwnAlone",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 15090,
         "team_name": "Party Astronauts",
         "team_logo": "https://static.hltv.org/images/team/logo/8038",
@@ -1195,6 +1321,7 @@ export default {
     {
         "name": "FL1T",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 12732,
         "team_name": "forZe",
         "team_logo": "https://static.hltv.org/images/team/logo/8135",
@@ -1204,6 +1331,7 @@ export default {
     {
         "name": "MICHU",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 7356,
         "team_name": "Virtus.pro",
         "team_logo": "https://static.hltv.org/images/team/logo/5378",
@@ -1213,6 +1341,7 @@ export default {
     {
         "name": "Jonji",
         "country": "https://static.hltv.org/images/bigflags/30x20/CA.gif",
+        "country_name": "Canada",
         "id": 12113,
         "team_name": "Riot Squad",
         "team_logo": "https://static.hltv.org/images/team/logo/10164",
@@ -1222,6 +1351,7 @@ export default {
     {
         "name": "Voltage",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 13228,
         "team_name": "Triumph",
         "team_logo": "https://static.hltv.org/images/team/logo/10304",
@@ -1231,6 +1361,7 @@ export default {
     {
         "name": "KRIMZ",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 7528,
         "team_name": "fnatic",
         "team_logo": "https://static.hltv.org/images/team/logo/4991",
@@ -1240,6 +1371,7 @@ export default {
     {
         "name": "DeStRoYeR",
         "country": "https://static.hltv.org/images/bigflags/30x20/CN.gif",
+        "country_name": "China",
         "id": 10192,
         "team_name": "EHOME",
         "team_logo": "https://static.hltv.org/images/team/logo/7024",
@@ -1249,6 +1381,7 @@ export default {
     {
         "name": "cbbk",
         "country": "https://static.hltv.org/images/bigflags/30x20/TH.gif",
+        "country_name": "Thailand",
         "id": 10764,
         "team_name": "Lucid Dream",
         "team_logo": "https://static.hltv.org/images/team/logo/8680",
@@ -1258,6 +1391,7 @@ export default {
     {
         "name": "xccurate",
         "country": "https://static.hltv.org/images/bigflags/30x20/ID.gif",
+        "country_name": "Indonesia",
         "id": 10263,
         "team_name": "BTRG",
         "team_logo": "https://static.hltv.org/images/team/logo/9107",
@@ -1267,6 +1401,7 @@ export default {
     {
         "name": "JohnOlsen",
         "country": "https://static.hltv.org/images/bigflags/30x20/TH.gif",
+        "country_name": "Thailand",
         "id": 16911,
         "team_name": "Lucid Dream",
         "team_logo": "https://static.hltv.org/images/team/logo/8680",
@@ -1276,6 +1411,7 @@ export default {
     {
         "name": "Davidp",
         "country": "https://static.hltv.org/images/bigflags/30x20/BE.gif",
+        "country_name": "Belgium",
         "id": 8138,
         "team_name": "Heretics",
         "team_logo": "https://static.hltv.org/images/team/logo/8346",
@@ -1285,6 +1421,7 @@ export default {
     {
         "name": "zehN",
         "country": "https://static.hltv.org/images/bigflags/30x20/FI.gif",
+        "country_name": "Finland",
         "id": 1378,
         "team_name": "GODSENT",
         "team_logo": "https://static.hltv.org/images/team/logo/6902",
@@ -1294,6 +1431,7 @@ export default {
     {
         "name": "FalleN",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 2023,
         "team_name": "MIBR",
         "team_logo": "https://static.hltv.org/images/team/logo/9215",
@@ -1303,6 +1441,7 @@ export default {
     {
         "name": "HEN1",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 8565,
         "team_name": "FURIA",
         "team_logo": "https://static.hltv.org/images/team/logo/8297",
@@ -1312,6 +1451,7 @@ export default {
     {
         "name": "Grim",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 13578,
         "team_name": "Triumph",
         "team_logo": "https://static.hltv.org/images/team/logo/10304",
@@ -1321,6 +1461,7 @@ export default {
     {
         "name": "Noobster",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 9680,
         "team_name": "Ground Zero",
         "team_logo": "https://static.hltv.org/images/team/logo/8536",
@@ -1330,6 +1471,7 @@ export default {
     {
         "name": "k1to",
         "country": "https://static.hltv.org/images/bigflags/30x20/DE.gif",
+        "country_name": "Germany",
         "id": 12781,
         "team_name": "Sprout",
         "team_logo": "https://static.hltv.org/images/team/logo/8637",
@@ -1339,6 +1481,7 @@ export default {
     {
         "name": "mawth",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 10838,
         "team_name": "Falkol",
         "team_logo": "https://static.hltv.org/images/team/logo/10028",
@@ -1348,6 +1491,7 @@ export default {
     {
         "name": "STOMP",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 12699,
         "team_name": "Illuminar",
         "team_logo": "https://static.hltv.org/images/team/logo/8813",
@@ -1357,6 +1501,7 @@ export default {
     {
         "name": "ALEX",
         "country": "https://static.hltv.org/images/bigflags/30x20/ES.gif",
+        "country_name": "Spain",
         "id": 8371,
         "team_name": "Movistar Riders",
         "team_logo": "https://static.hltv.org/images/team/logo/7718",
@@ -1366,6 +1511,7 @@ export default {
     {
         "name": "aumaN",
         "country": "https://static.hltv.org/images/bigflags/30x20/CN.gif",
+        "country_name": "China",
         "id": 8604,
         "team_name": "ViCi",
         "team_logo": "https://static.hltv.org/images/team/logo/7606",
@@ -1373,8 +1519,19 @@ export default {
         "rating": 1.09
     },
     {
+        "name": "flying",
+        "country": "https://static.hltv.org/images/bigflags/30x20/CN.gif",
+        "country_name": "China",
+        "id": 16872,
+        "team_name": "Invictus",
+        "team_logo": "https://static.hltv.org/images/team/logo/7966",
+        "maps": 149,
+        "rating": 1.09
+    },
+    {
         "name": "stat",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 12086,
         "team_name": "Genuine",
         "team_logo": "https://static.hltv.org/images/team/logo/9747",
@@ -1384,6 +1541,7 @@ export default {
     {
         "name": "k0nfig",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 9078,
         "team_name": "OpTic",
         "team_logo": "https://static.hltv.org/images/team/logo/6615",
@@ -1393,6 +1551,7 @@ export default {
     {
         "name": "f0rest",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 29,
         "team_name": "NiP",
         "team_logo": "https://static.hltv.org/images/team/logo/4411",
@@ -1402,6 +1561,7 @@ export default {
     {
         "name": "tatazin",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 10840,
         "team_name": "paiN",
         "team_logo": "https://static.hltv.org/images/team/logo/4773",
@@ -1411,6 +1571,7 @@ export default {
     {
         "name": "STYKO",
         "country": "https://static.hltv.org/images/bigflags/30x20/SK.gif",
+        "country_name": "Slovakia",
         "id": 6904,
         "team_name": "GODSENT",
         "team_logo": "https://static.hltv.org/images/team/logo/6902",
@@ -1418,17 +1579,9 @@ export default {
         "rating": 1.09
     },
     {
-        "name": "flying",
-        "country": "https://static.hltv.org/images/bigflags/30x20/CN.gif",
-        "id": 16872,
-        "team_name": "Invictus",
-        "team_logo": "https://static.hltv.org/images/team/logo/7966",
-        "maps": 141,
-        "rating": 1.09
-    },
-    {
         "name": "Xeppaa",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 15839,
         "team_name": "Rap Gang",
         "team_logo": "https://static.hltv.org/images/team/logo/10261",
@@ -1438,6 +1591,7 @@ export default {
     {
         "name": "hoody",
         "country": "https://static.hltv.org/images/bigflags/30x20/FI.gif",
+        "country_name": "Finland",
         "id": 13396,
         "team_name": "HAVU",
         "team_logo": "https://static.hltv.org/images/team/logo/7865",
@@ -1447,6 +1601,7 @@ export default {
     {
         "name": "buster",
         "country": "https://static.hltv.org/images/bigflags/30x20/KZ.gif",
+        "country_name": "Kazakhstan",
         "id": 11942,
         "team_name": "AVANGAR",
         "team_logo": "https://static.hltv.org/images/team/logo/8120",
@@ -1456,6 +1611,7 @@ export default {
     {
         "name": "arT",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 12521,
         "team_name": "FURIA",
         "team_logo": "https://static.hltv.org/images/team/logo/8297",
@@ -1465,6 +1621,7 @@ export default {
     {
         "name": "Valiance",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 16323,
         "team_name": "ORDER",
         "team_logo": "https://static.hltv.org/images/team/logo/8668",
@@ -1474,6 +1631,7 @@ export default {
     {
         "name": "BL1TZ",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 12715,
         "team_name": "Chiefs",
         "team_logo": "https://static.hltv.org/images/team/logo/6010",
@@ -1483,6 +1641,7 @@ export default {
     {
         "name": "refrezh",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 10610,
         "team_name": "OpTic",
         "team_logo": "https://static.hltv.org/images/team/logo/6615",
@@ -1492,6 +1651,7 @@ export default {
     {
         "name": "almazer",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 11654,
         "team_name": "forZe",
         "team_logo": "https://static.hltv.org/images/team/logo/8135",
@@ -1501,6 +1661,7 @@ export default {
     {
         "name": "Flarich",
         "country": "https://static.hltv.org/images/bigflags/30x20/LV.gif",
+        "country_name": "Latvia",
         "id": 11250,
         "team_name": "HellRaisers",
         "team_logo": "https://static.hltv.org/images/team/logo/5310",
@@ -1510,6 +1671,7 @@ export default {
     {
         "name": "facecrack",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 8726,
         "team_name": "forZe",
         "team_logo": "https://static.hltv.org/images/team/logo/8135",
@@ -1519,15 +1681,17 @@ export default {
     {
         "name": "Jyo",
         "country": "https://static.hltv.org/images/bigflags/30x20/EE.gif",
+        "country_name": "Estonia",
         "id": 12269,
         "team_name": "Nemiga",
         "team_logo": "https://static.hltv.org/images/team/logo/7969",
-        "maps": 317,
+        "maps": 318,
         "rating": 1.08
     },
     {
         "name": "Freeman",
         "country": "https://static.hltv.org/images/bigflags/30x20/HK.gif",
+        "country_name": "Hong Kong",
         "id": 10774,
         "team_name": "TYLOO",
         "team_logo": "https://static.hltv.org/images/team/logo/4863",
@@ -1537,6 +1701,7 @@ export default {
     {
         "name": "Maka",
         "country": "https://static.hltv.org/images/bigflags/30x20/FR.gif",
+        "country_name": "France",
         "id": 13138,
         "team_name": "Heretics",
         "team_logo": "https://static.hltv.org/images/team/logo/8346",
@@ -1546,6 +1711,7 @@ export default {
     {
         "name": "zewsy",
         "country": "https://static.hltv.org/images/bigflags/30x20/NZ.gif",
+        "country_name": "New Zealand",
         "id": 8764,
         "team_name": "Chiefs",
         "team_logo": "https://static.hltv.org/images/team/logo/6010",
@@ -1555,6 +1721,7 @@ export default {
     {
         "name": "autimatic",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 8735,
         "team_name": "Cloud9",
         "team_logo": "https://static.hltv.org/images/team/logo/5752",
@@ -1564,6 +1731,7 @@ export default {
     {
         "name": "xand",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 9218,
         "team_name": "INTZ",
         "team_logo": "https://static.hltv.org/images/team/logo/6619",
@@ -1573,6 +1741,7 @@ export default {
     {
         "name": "Boombl4",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 11840,
         "team_name": "Natus Vincere",
         "team_logo": "https://static.hltv.org/images/team/logo/4608",
@@ -1582,6 +1751,7 @@ export default {
     {
         "name": "PlesseN",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 9811,
         "team_name": "Chaos",
         "team_logo": "https://static.hltv.org/images/team/logo/9085",
@@ -1591,6 +1761,7 @@ export default {
     {
         "name": "Kjaerbye",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 8394,
         "team_name": "North",
         "team_logo": "https://static.hltv.org/images/team/logo/7533",
@@ -1600,6 +1771,7 @@ export default {
     {
         "name": "sLowi",
         "country": "https://static.hltv.org/images/bigflags/30x20/FI.gif",
+        "country_name": "Finland",
         "id": 9271,
         "team_name": "HAVU",
         "team_logo": "https://static.hltv.org/images/team/logo/7865",
@@ -1609,6 +1781,7 @@ export default {
     {
         "name": "tucks",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 9108,
         "team_name": "Chiefs",
         "team_logo": "https://static.hltv.org/images/team/logo/6010",
@@ -1618,6 +1791,7 @@ export default {
     {
         "name": "Maluk3",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 2529,
         "team_name": "TeamOne",
         "team_logo": "https://static.hltv.org/images/team/logo/6947",
@@ -1627,6 +1801,7 @@ export default {
     {
         "name": "zhokiNg",
         "country": "https://static.hltv.org/images/bigflags/30x20/CN.gif",
+        "country_name": "China",
         "id": 8601,
         "team_name": "ViCi",
         "team_logo": "https://static.hltv.org/images/team/logo/7606",
@@ -1636,6 +1811,7 @@ export default {
     {
         "name": "sjuush",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 14148,
         "team_name": "Tricked",
         "team_logo": "https://static.hltv.org/images/team/logo/4602",
@@ -1645,6 +1821,7 @@ export default {
     {
         "name": "NEEX",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 8543,
         "team_name": "Izako Boars",
         "team_logo": "https://static.hltv.org/images/team/logo/7681",
@@ -1654,6 +1831,7 @@ export default {
     {
         "name": "hampus",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 9766,
         "team_name": "GamerLegion",
         "team_logo": "https://static.hltv.org/images/team/logo/9928",
@@ -1663,6 +1841,7 @@ export default {
     {
         "name": "ryann",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 12088,
         "team_name": "Envy",
         "team_logo": "https://static.hltv.org/images/team/logo/5991",
@@ -1672,6 +1851,7 @@ export default {
     {
         "name": "faveN",
         "country": "https://static.hltv.org/images/bigflags/30x20/DE.gif",
+        "country_name": "Germany",
         "id": 14932,
         "team_name": "Sprout",
         "team_logo": "https://static.hltv.org/images/team/logo/8637",
@@ -1681,6 +1861,7 @@ export default {
     {
         "name": "COLDYY1",
         "country": "https://static.hltv.org/images/bigflags/30x20/UA.gif",
+        "country_name": "Ukraine",
         "id": 9083,
         "team_name": "Spirit",
         "team_logo": "https://static.hltv.org/images/team/logo/7020",
@@ -1690,6 +1871,7 @@ export default {
     {
         "name": "Viva",
         "country": "https://static.hltv.org/images/bigflags/30x20/CN.gif",
+        "country_name": "China",
         "id": 15419,
         "team_name": "R-Stars",
         "team_logo": "https://static.hltv.org/images/team/logo/10472",
@@ -1699,6 +1881,7 @@ export default {
     {
         "name": "NickelBack",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 11498,
         "team_name": "pro100",
         "team_logo": "https://static.hltv.org/images/team/logo/7898",
@@ -1708,6 +1891,7 @@ export default {
     {
         "name": "Perfecto",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 16947,
         "team_name": "Syman",
         "team_logo": "https://static.hltv.org/images/team/logo/8772",
@@ -1717,6 +1901,7 @@ export default {
     {
         "name": "EspiranTo",
         "country": "https://static.hltv.org/images/bigflags/30x20/LT.gif",
+        "country_name": "Lithuania",
         "id": 12030,
         "team_name": "CR4ZY",
         "team_logo": "https://static.hltv.org/images/team/logo/10150",
@@ -1726,6 +1911,7 @@ export default {
     {
         "name": "apocdud",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 12872,
         "team_name": "Genuine",
         "team_logo": "https://static.hltv.org/images/team/logo/9747",
@@ -1735,6 +1921,7 @@ export default {
     {
         "name": "Furlan",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 8327,
         "team_name": "AGO",
         "team_logo": "https://static.hltv.org/images/team/logo/8068",
@@ -1744,6 +1931,7 @@ export default {
     {
         "name": "qqGOD",
         "country": "https://static.hltv.org/images/bigflags/30x20/TH.gif",
+        "country_name": "Thailand",
         "id": 9289,
         "team_name": "Lucid Dream",
         "team_logo": "https://static.hltv.org/images/team/logo/8680",
@@ -1753,6 +1941,7 @@ export default {
     {
         "name": "chelo",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 10566,
         "team_name": "INTZ",
         "team_logo": "https://static.hltv.org/images/team/logo/6619",
@@ -1762,6 +1951,7 @@ export default {
     {
         "name": "es3tag",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 8611,
         "team_name": "Heroic",
         "team_logo": "https://static.hltv.org/images/team/logo/7175",
@@ -1771,6 +1961,7 @@ export default {
     {
         "name": "exit",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 11154,
         "team_name": "Sharks",
         "team_logo": "https://static.hltv.org/images/team/logo/8113",
@@ -1780,6 +1971,7 @@ export default {
     {
         "name": "DickStacy",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 12876,
         "team_name": "Grayhound",
         "team_logo": "https://static.hltv.org/images/team/logo/8008",
@@ -1787,8 +1979,19 @@ export default {
         "rating": 1.07
     },
     {
+        "name": "mds",
+        "country": "https://static.hltv.org/images/bigflags/30x20/BY.gif",
+        "country_name": "Belarus",
+        "id": 11926,
+        "team_name": "Nemiga",
+        "team_logo": "https://static.hltv.org/images/team/logo/7969",
+        "maps": 287,
+        "rating": 1.07
+    },
+    {
         "name": "land1n",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 10557,
         "team_name": "paiN",
         "team_logo": "https://static.hltv.org/images/team/logo/4773",
@@ -1798,6 +2001,7 @@ export default {
     {
         "name": "aizy",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 8095,
         "team_name": "North",
         "team_logo": "https://static.hltv.org/images/team/logo/7533",
@@ -1807,6 +2011,7 @@ export default {
     {
         "name": "real",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 16769,
         "team_name": "W7M",
         "team_logo": "https://static.hltv.org/images/team/logo/8574",
@@ -1814,17 +2019,9 @@ export default {
         "rating": 1.07
     },
     {
-        "name": "mds",
-        "country": "https://static.hltv.org/images/bigflags/30x20/BY.gif",
-        "id": 11926,
-        "team_name": "Nemiga",
-        "team_logo": "https://static.hltv.org/images/team/logo/7969",
-        "maps": 286,
-        "rating": 1.07
-    },
-    {
         "name": "disco doplan",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 9256,
         "team_name": "Ancient",
         "team_logo": "https://static.hltv.org/images/team/logo/6685",
@@ -1834,6 +2031,7 @@ export default {
     {
         "name": "malta",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 11485,
         "team_name": "Grayhound",
         "team_logo": "https://static.hltv.org/images/team/logo/8008",
@@ -1843,6 +2041,7 @@ export default {
     {
         "name": "Stewie2K",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 8797,
         "team_name": "Liquid",
         "team_logo": "https://static.hltv.org/images/team/logo/5973",
@@ -1852,6 +2051,7 @@ export default {
     {
         "name": "ryotzz",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 13989,
         "team_name": "W7M",
         "team_logo": "https://static.hltv.org/images/team/logo/8574",
@@ -1861,6 +2061,7 @@ export default {
     {
         "name": "supra",
         "country": "https://static.hltv.org/images/bigflags/30x20/EE.gif",
+        "country_name": "Estonia",
         "id": 16415,
         "team_name": "Gambit Youngsters",
         "team_logo": "https://static.hltv.org/images/team/logo/9976",
@@ -1870,6 +2071,7 @@ export default {
     {
         "name": "Spongey",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 13589,
         "team_name": "Triumph",
         "team_logo": "https://static.hltv.org/images/team/logo/10304",
@@ -1879,6 +2081,7 @@ export default {
     {
         "name": "loWel",
         "country": "https://static.hltv.org/images/bigflags/30x20/ES.gif",
+        "country_name": "Spain",
         "id": 3997,
         "team_name": "Movistar Riders",
         "team_logo": "https://static.hltv.org/images/team/logo/7718",
@@ -1888,6 +2091,7 @@ export default {
     {
         "name": "food",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 9875,
         "team_name": "eUnited",
         "team_logo": "https://static.hltv.org/images/team/logo/7106",
@@ -1897,6 +2101,7 @@ export default {
     {
         "name": "iDk",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 10818,
         "team_name": "Imperial",
         "team_logo": "https://static.hltv.org/images/team/logo/9455",
@@ -1904,8 +2109,19 @@ export default {
         "rating": 1.07
     },
     {
+        "name": "Sobol",
+        "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
+        "id": 15940,
+        "team_name": "PACT",
+        "team_logo": "https://static.hltv.org/images/team/logo/8248",
+        "maps": 233,
+        "rating": 1.07
+    },
+    {
         "name": "Krad",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 12027,
         "team_name": "Hard Legion",
         "team_logo": "https://static.hltv.org/images/team/logo/10421",
@@ -1915,6 +2131,7 @@ export default {
     {
         "name": "broky",
         "country": "https://static.hltv.org/images/bigflags/30x20/LV.gif",
+        "country_name": "Latvia",
         "id": 18053,
         "team_name": "FaZe",
         "team_logo": "https://static.hltv.org/images/team/logo/6667",
@@ -1924,6 +2141,7 @@ export default {
     {
         "name": "slaxz-",
         "country": "https://static.hltv.org/images/bigflags/30x20/DE.gif",
+        "country_name": "Germany",
         "id": 15370,
         "team_name": "ALTERNATE aTTaX",
         "team_logo": "https://static.hltv.org/images/team/logo/4501",
@@ -1933,6 +2151,7 @@ export default {
     {
         "name": "zqkS",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 7383,
         "team_name": "Keyd",
         "team_logo": "https://static.hltv.org/images/team/logo/6033",
@@ -1942,6 +2161,7 @@ export default {
     {
         "name": "Andyy",
         "country": "https://static.hltv.org/images/bigflags/30x20/DE.gif",
+        "country_name": "Germany",
         "id": 17566,
         "team_name": "Unicorns of Love",
         "team_logo": "https://static.hltv.org/images/team/logo/9812",
@@ -1951,6 +2171,7 @@ export default {
     {
         "name": "xiaosaGe",
         "country": "https://static.hltv.org/images/bigflags/30x20/CN.gif",
+        "country_name": "China",
         "id": 11574,
         "team_name": "R-Stars",
         "team_logo": "https://static.hltv.org/images/team/logo/10472",
@@ -1960,6 +2181,7 @@ export default {
     {
         "name": "Relaxa",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 9279,
         "team_name": "Chaos",
         "team_logo": "https://static.hltv.org/images/team/logo/9085",
@@ -1969,6 +2191,7 @@ export default {
     {
         "name": "scoobyxie",
         "country": "https://static.hltv.org/images/bigflags/30x20/UA.gif",
+        "country_name": "Ukraine",
         "id": 15547,
         "team_name": "HellRaisers",
         "team_logo": "https://static.hltv.org/images/team/logo/5310",
@@ -1978,6 +2201,7 @@ export default {
     {
         "name": "shox",
         "country": "https://static.hltv.org/images/bigflags/30x20/FR.gif",
+        "country_name": "France",
         "id": 1225,
         "team_name": "Vitality",
         "team_logo": "https://static.hltv.org/images/team/logo/9565",
@@ -1987,6 +2211,7 @@ export default {
     {
         "name": "Jerry",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 13157,
         "team_name": "forZe",
         "team_logo": "https://static.hltv.org/images/team/logo/8135",
@@ -1996,6 +2221,7 @@ export default {
     {
         "name": "GruBy",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 8570,
         "team_name": "AGO",
         "team_logo": "https://static.hltv.org/images/team/logo/8068",
@@ -2005,6 +2231,7 @@ export default {
     {
         "name": "speed4k",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 13155,
         "team_name": "Hard Legion",
         "team_logo": "https://static.hltv.org/images/team/logo/10421",
@@ -2014,6 +2241,7 @@ export default {
     {
         "name": "rain",
         "country": "https://static.hltv.org/images/bigflags/30x20/NO.gif",
+        "country_name": "Norway",
         "id": 8183,
         "team_name": "FaZe",
         "team_logo": "https://static.hltv.org/images/team/logo/6667",
@@ -2023,6 +2251,7 @@ export default {
     {
         "name": "Maikelele",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 1045,
         "team_name": "GODSENT",
         "team_logo": "https://static.hltv.org/images/team/logo/6902",
@@ -2032,6 +2261,7 @@ export default {
     {
         "name": "NBK-",
         "country": "https://static.hltv.org/images/bigflags/30x20/FR.gif",
+        "country_name": "France",
         "id": 7168,
         "team_name": "Vitality",
         "team_logo": "https://static.hltv.org/images/team/logo/9565",
@@ -2041,6 +2271,7 @@ export default {
     {
         "name": "cadiaN",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 7964,
         "team_name": "Heroic",
         "team_logo": "https://static.hltv.org/images/team/logo/7175",
@@ -2050,6 +2281,7 @@ export default {
     {
         "name": "JW",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 3849,
         "team_name": "fnatic",
         "team_logo": "https://static.hltv.org/images/team/logo/4991",
@@ -2059,6 +2291,7 @@ export default {
     {
         "name": "bottle",
         "country": "https://static.hltv.org/images/bigflags/30x20/CN.gif",
+        "country_name": "China",
         "id": 10168,
         "team_name": "R-Stars",
         "team_logo": "https://static.hltv.org/images/team/logo/10472",
@@ -2068,6 +2301,7 @@ export default {
     {
         "name": "gla1ve",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 7412,
         "team_name": "Astralis",
         "team_logo": "https://static.hltv.org/images/team/logo/6665",
@@ -2077,6 +2311,7 @@ export default {
     {
         "name": "WorldEdit",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 7403,
         "team_name": "pro100",
         "team_logo": "https://static.hltv.org/images/team/logo/7898",
@@ -2086,6 +2321,7 @@ export default {
     {
         "name": "Tuurtle",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 14394,
         "team_name": "DETONA",
         "team_logo": "https://static.hltv.org/images/team/logo/8902",
@@ -2095,6 +2331,7 @@ export default {
     {
         "name": "cam",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 13186,
         "team_name": "Singularity",
         "team_logo": "https://static.hltv.org/images/team/logo/6978",
@@ -2104,6 +2341,7 @@ export default {
     {
         "name": "JaCkz",
         "country": "https://static.hltv.org/images/bigflags/30x20/FR.gif",
+        "country_name": "France",
         "id": 284,
         "team_name": "G2",
         "team_logo": "https://static.hltv.org/images/team/logo/5995",
@@ -2113,6 +2351,7 @@ export default {
     {
         "name": "emagine",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 8744,
         "team_name": "ORDER",
         "team_logo": "https://static.hltv.org/images/team/logo/8668",
@@ -2120,17 +2359,9 @@ export default {
         "rating": 1.06
     },
     {
-        "name": "Sobol",
-        "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
-        "id": 15940,
-        "team_name": "PACT",
-        "team_logo": "https://static.hltv.org/images/team/logo/8248",
-        "maps": 220,
-        "rating": 1.06
-    },
-    {
         "name": "Relyks",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 8517,
         "team_name": "Singularity",
         "team_logo": "https://static.hltv.org/images/team/logo/6978",
@@ -2140,6 +2371,7 @@ export default {
     {
         "name": "Snakes",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 13229,
         "team_name": "Triumph",
         "team_logo": "https://static.hltv.org/images/team/logo/10304",
@@ -2149,6 +2381,7 @@ export default {
     {
         "name": "leo_druNky",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 11329,
         "team_name": "Sharks",
         "team_logo": "https://static.hltv.org/images/team/logo/8113",
@@ -2156,8 +2389,19 @@ export default {
         "rating": 1.06
     },
     {
+        "name": "DiMKE",
+        "country": "https://static.hltv.org/images/bigflags/30x20/RS.gif",
+        "country_name": "Serbia",
+        "id": 3732,
+        "team_name": "Juggernauts",
+        "team_logo": "https://static.hltv.org/images/team/logo/10509",
+        "maps": 130,
+        "rating": 1.06
+    },
+    {
         "name": "Nifty",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 9069,
         "team_name": "Envy",
         "team_logo": "https://static.hltv.org/images/team/logo/5991",
@@ -2167,6 +2411,7 @@ export default {
     {
         "name": "AiyvaN",
         "country": "https://static.hltv.org/images/bigflags/30x20/UA.gif",
+        "country_name": "Ukraine",
         "id": 9349,
         "team_name": "pro100",
         "team_logo": "https://static.hltv.org/images/team/logo/7898",
@@ -2176,6 +2421,7 @@ export default {
     {
         "name": "innocent",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 3669,
         "team_name": "Illuminar",
         "team_logo": "https://static.hltv.org/images/team/logo/8813",
@@ -2185,6 +2431,7 @@ export default {
     {
         "name": "SHOOWTiME",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 9220,
         "team_name": "Keyd",
         "team_logo": "https://static.hltv.org/images/team/logo/6033",
@@ -2194,6 +2441,7 @@ export default {
     {
         "name": "dazzLe",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 11064,
         "team_name": "Singularity",
         "team_logo": "https://static.hltv.org/images/team/logo/6978",
@@ -2203,6 +2451,7 @@ export default {
     {
         "name": "Attacker",
         "country": "https://static.hltv.org/images/bigflags/30x20/CN.gif",
+        "country_name": "China",
         "id": 8552,
         "team_name": "TYLOO",
         "team_logo": "https://static.hltv.org/images/team/logo/4863",
@@ -2212,6 +2461,7 @@ export default {
     {
         "name": "SZPERO",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 973,
         "team_name": "Wisla Krakow",
         "team_logo": "https://static.hltv.org/images/team/logo/10426",
@@ -2221,6 +2471,7 @@ export default {
     {
         "name": "EasTor",
         "country": "https://static.hltv.org/images/bigflags/30x20/ES.gif",
+        "country_name": "Spain",
         "id": 4373,
         "team_name": "Movistar Riders",
         "team_logo": "https://static.hltv.org/images/team/logo/7718",
@@ -2230,6 +2481,7 @@ export default {
     {
         "name": "flamie",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 7594,
         "team_name": "Natus Vincere",
         "team_logo": "https://static.hltv.org/images/team/logo/4608",
@@ -2239,6 +2491,7 @@ export default {
     {
         "name": "Patitek",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 14670,
         "team_name": "Izako Boars",
         "team_logo": "https://static.hltv.org/images/team/logo/7681",
@@ -2248,6 +2501,7 @@ export default {
     {
         "name": "Ramz1kBO$$",
         "country": "https://static.hltv.org/images/bigflags/30x20/KZ.gif",
+        "country_name": "Kazakhstan",
         "id": 11842,
         "team_name": "Syman",
         "team_logo": "https://static.hltv.org/images/team/logo/8772",
@@ -2257,6 +2511,7 @@ export default {
     {
         "name": "Lucky",
         "country": "https://static.hltv.org/images/bigflags/30x20/FR.gif",
+        "country_name": "France",
         "id": 13497,
         "team_name": "Heretics",
         "team_logo": "https://static.hltv.org/images/team/logo/8346",
@@ -2266,6 +2521,7 @@ export default {
     {
         "name": "kressy",
         "country": "https://static.hltv.org/images/bigflags/30x20/DE.gif",
+        "country_name": "Germany",
         "id": 12782,
         "team_name": "ALTERNATE aTTaX",
         "team_logo": "https://static.hltv.org/images/team/logo/4501",
@@ -2275,6 +2531,7 @@ export default {
     {
         "name": "jedqr",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 14684,
         "team_name": "Wisla Krakow",
         "team_logo": "https://static.hltv.org/images/team/logo/10426",
@@ -2284,6 +2541,7 @@ export default {
     {
         "name": "ScreaM",
         "country": "https://static.hltv.org/images/bigflags/30x20/BE.gif",
+        "country_name": "Belgium",
         "id": 7390,
         "team_name": "GamerLegion",
         "team_logo": "https://static.hltv.org/images/team/logo/9928",
@@ -2293,6 +2551,7 @@ export default {
     {
         "name": "stellar",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 13177,
         "team_name": "Divine",
         "team_logo": "https://static.hltv.org/images/team/logo/10302",
@@ -2302,6 +2561,7 @@ export default {
     {
         "name": "prt",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 10827,
         "team_name": "DETONA",
         "team_logo": "https://static.hltv.org/images/team/logo/8902",
@@ -2311,6 +2571,7 @@ export default {
     {
         "name": "ROBO",
         "country": "https://static.hltv.org/images/bigflags/30x20/BY.gif",
+        "country_name": "Belarus",
         "id": 3410,
         "team_name": "Nemiga",
         "team_logo": "https://static.hltv.org/images/team/logo/7969",
@@ -2320,6 +2581,7 @@ export default {
     {
         "name": "Nodios",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 8891,
         "team_name": "Copenhagen Flames",
         "team_logo": "https://static.hltv.org/images/team/logo/7461",
@@ -2329,6 +2591,7 @@ export default {
     {
         "name": "reatz",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 8242,
         "team_name": "Illuminar",
         "team_logo": "https://static.hltv.org/images/team/logo/8813",
@@ -2338,6 +2601,7 @@ export default {
     {
         "name": "mouz",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 8323,
         "team_name": "ARCY",
         "team_logo": "https://static.hltv.org/images/team/logo/10494",
@@ -2347,6 +2611,7 @@ export default {
     {
         "name": "Ax1Le",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 16555,
         "team_name": "Gambit Youngsters",
         "team_logo": "https://static.hltv.org/images/team/logo/9976",
@@ -2356,6 +2621,7 @@ export default {
     {
         "name": "Jinxx",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 11538,
         "team_name": "Genuine",
         "team_logo": "https://static.hltv.org/images/team/logo/9747",
@@ -2363,26 +2629,9 @@ export default {
         "rating": 1.05
     },
     {
-        "name": "fenvicious",
-        "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
-        "id": 10590,
-        "team_name": "Unique",
-        "team_logo": "https://static.hltv.org/images/team/logo/9287",
-        "maps": 206,
-        "rating": 1.05
-    },
-    {
-        "name": "DiMKE",
-        "country": "https://static.hltv.org/images/bigflags/30x20/RS.gif",
-        "id": 3732,
-        "team_name": "Juggernauts",
-        "team_logo": "https://static.hltv.org/images/team/logo/10509",
-        "maps": 125,
-        "rating": 1.05
-    },
-    {
         "name": "Bwills",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 16647,
         "team_name": "Rap Gang",
         "team_logo": "https://static.hltv.org/images/team/logo/10261",
@@ -2390,8 +2639,19 @@ export default {
         "rating": 1.05
     },
     {
+        "name": "fenvicious",
+        "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
+        "id": 10590,
+        "team_name": "Unique",
+        "team_logo": "https://static.hltv.org/images/team/logo/9287",
+        "maps": 208,
+        "rating": 1.04
+    },
+    {
         "name": "Aerial",
         "country": "https://static.hltv.org/images/bigflags/30x20/FI.gif",
+        "country_name": "Finland",
         "id": 4076,
         "team_name": "ENCE",
         "team_logo": "https://static.hltv.org/images/team/logo/4869",
@@ -2399,8 +2659,19 @@ export default {
         "rating": 1.04
     },
     {
+        "name": "boX",
+        "country": "https://static.hltv.org/images/bigflags/30x20/BY.gif",
+        "country_name": "Belarus",
+        "id": 13976,
+        "team_name": "Nemiga",
+        "team_logo": "https://static.hltv.org/images/team/logo/7969",
+        "maps": 304,
+        "rating": 1.04
+    },
+    {
         "name": "JDC",
         "country": "https://static.hltv.org/images/bigflags/30x20/DE.gif",
+        "country_name": "Germany",
         "id": 14929,
         "team_name": "Unicorns of Love",
         "team_logo": "https://static.hltv.org/images/team/logo/9812",
@@ -2410,6 +2681,7 @@ export default {
     {
         "name": "JUGi",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 8783,
         "team_name": "North",
         "team_logo": "https://static.hltv.org/images/team/logo/7533",
@@ -2417,17 +2689,9 @@ export default {
         "rating": 1.04
     },
     {
-        "name": "boX",
-        "country": "https://static.hltv.org/images/bigflags/30x20/BY.gif",
-        "id": 13976,
-        "team_name": "Nemiga",
-        "team_logo": "https://static.hltv.org/images/team/logo/7969",
-        "maps": 303,
-        "rating": 1.04
-    },
-    {
         "name": "bit",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 555,
         "team_name": "TeamOne",
         "team_logo": "https://static.hltv.org/images/team/logo/6947",
@@ -2437,6 +2701,7 @@ export default {
     {
         "name": "AmaNEk",
         "country": "https://static.hltv.org/images/bigflags/30x20/FR.gif",
+        "country_name": "France",
         "id": 9616,
         "team_name": "G2",
         "team_logo": "https://static.hltv.org/images/team/logo/5995",
@@ -2446,6 +2711,7 @@ export default {
     {
         "name": "TeSeS",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 12018,
         "team_name": "Copenhagen Flames",
         "team_logo": "https://static.hltv.org/images/team/logo/7461",
@@ -2455,6 +2721,7 @@ export default {
     {
         "name": "apEX",
         "country": "https://static.hltv.org/images/bigflags/30x20/FR.gif",
+        "country_name": "France",
         "id": 7322,
         "team_name": "Vitality",
         "team_logo": "https://static.hltv.org/images/team/logo/9565",
@@ -2464,6 +2731,7 @@ export default {
     {
         "name": "void",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 14954,
         "team_name": "Ground Zero",
         "team_logo": "https://static.hltv.org/images/team/logo/8536",
@@ -2471,8 +2739,19 @@ export default {
         "rating": 1.04
     },
     {
+        "name": "Crityourface",
+        "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
+        "id": 15900,
+        "team_name": "PACT",
+        "team_logo": "https://static.hltv.org/images/team/logo/8248",
+        "maps": 142,
+        "rating": 1.04
+    },
+    {
         "name": "kinqie",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 3459,
         "team_name": "Hard Legion",
         "team_logo": "https://static.hltv.org/images/team/logo/10421",
@@ -2482,6 +2761,7 @@ export default {
     {
         "name": "stfN",
         "country": "https://static.hltv.org/images/bigflags/30x20/DE.gif",
+        "country_name": "Germany",
         "id": 8800,
         "team_name": "ALTERNATE aTTaX",
         "team_logo": "https://static.hltv.org/images/team/logo/4501",
@@ -2491,6 +2771,7 @@ export default {
     {
         "name": "tiburci0",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 16695,
         "team_name": "DETONA",
         "team_logo": "https://static.hltv.org/images/team/logo/8902",
@@ -2500,6 +2781,7 @@ export default {
     {
         "name": "nitr0",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 7687,
         "team_name": "Liquid",
         "team_logo": "https://static.hltv.org/images/team/logo/5973",
@@ -2509,6 +2791,7 @@ export default {
     {
         "name": "raafa",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 11748,
         "team_name": "W7M",
         "team_logo": "https://static.hltv.org/images/team/logo/8574",
@@ -2518,6 +2801,7 @@ export default {
     {
         "name": "soju_j",
         "country": "https://static.hltv.org/images/bigflags/30x20/NZ.gif",
+        "country_name": "New Zealand",
         "id": 12590,
         "team_name": "AVANT",
         "team_logo": "https://static.hltv.org/images/team/logo/5293",
@@ -2527,6 +2811,7 @@ export default {
     {
         "name": "nex",
         "country": "https://static.hltv.org/images/bigflags/30x20/DE.gif",
+        "country_name": "Germany",
         "id": 7256,
         "team_name": "BIG",
         "team_logo": "https://static.hltv.org/images/team/logo/7532",
@@ -2536,6 +2821,7 @@ export default {
     {
         "name": "freddieb",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 9257,
         "team_name": "GamerLegion",
         "team_logo": "https://static.hltv.org/images/team/logo/9928",
@@ -2545,6 +2831,7 @@ export default {
     {
         "name": "REZ",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 9278,
         "team_name": "NiP",
         "team_logo": "https://static.hltv.org/images/team/logo/4411",
@@ -2554,6 +2841,7 @@ export default {
     {
         "name": "Forester",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 13982,
         "team_name": "Hard Legion",
         "team_logo": "https://static.hltv.org/images/team/logo/10421",
@@ -2563,6 +2851,7 @@ export default {
     {
         "name": "Bobosaur",
         "country": "https://static.hltv.org/images/bigflags/30x20/SG.gif",
+        "country_name": "Singapore",
         "id": 12476,
         "team_name": "BOOT",
         "team_logo": "https://static.hltv.org/images/team/logo/6898",
@@ -2572,6 +2861,7 @@ export default {
     {
         "name": "reversive",
         "country": "https://static.hltv.org/images/bigflags/30x20/AR.gif",
+        "country_name": "Argentina",
         "id": 9221,
         "team_name": "Isurus",
         "team_logo": "https://static.hltv.org/images/team/logo/7653",
@@ -2581,6 +2871,7 @@ export default {
     {
         "name": "dennis",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 1146,
         "team_name": "GamerLegion",
         "team_logo": "https://static.hltv.org/images/team/logo/9928",
@@ -2590,6 +2881,7 @@ export default {
     {
         "name": "HS",
         "country": "https://static.hltv.org/images/bigflags/30x20/EE.gif",
+        "country_name": "Estonia",
         "id": 8994,
         "team_name": "GamerLegion",
         "team_logo": "https://static.hltv.org/images/team/logo/9928",
@@ -2599,6 +2891,7 @@ export default {
     {
         "name": "chrisJ",
         "country": "https://static.hltv.org/images/bigflags/30x20/NL.gif",
+        "country_name": "Netherlands",
         "id": 2730,
         "team_name": "mousesports",
         "team_logo": "https://static.hltv.org/images/team/logo/4494",
@@ -2608,6 +2901,7 @@ export default {
     {
         "name": "B\u00e5\u00e5ten",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 10463,
         "team_name": "Chaos",
         "team_logo": "https://static.hltv.org/images/team/logo/9085",
@@ -2615,8 +2909,19 @@ export default {
         "rating": 1.04
     },
     {
+        "name": "Dima",
+        "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
+        "id": 8125,
+        "team_name": "Espada",
+        "team_logo": "https://static.hltv.org/images/team/logo/8669",
+        "maps": 134,
+        "rating": 1.04
+    },
+    {
         "name": "blocker",
         "country": "https://static.hltv.org/images/bigflags/30x20/BG.gif",
+        "country_name": "Bulgaria",
         "id": 10697,
         "team_name": "Windigo",
         "team_logo": "https://static.hltv.org/images/team/logo/8513",
@@ -2624,8 +2929,19 @@ export default {
         "rating": 1.04
     },
     {
+        "name": "darko",
+        "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
+        "id": 11287,
+        "team_name": "PACT",
+        "team_logo": "https://static.hltv.org/images/team/logo/8248",
+        "maps": 228,
+        "rating": 1.03
+    },
+    {
         "name": "kioShiMa",
         "country": "https://static.hltv.org/images/bigflags/30x20/FR.gif",
+        "country_name": "France",
         "id": 4959,
         "team_name": "Heretics",
         "team_logo": "https://static.hltv.org/images/team/logo/8346",
@@ -2635,6 +2951,7 @@ export default {
     {
         "name": "tarik",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 8523,
         "team_name": "Evil Geniuses",
         "team_logo": "https://static.hltv.org/images/team/logo/10399",
@@ -2644,6 +2961,7 @@ export default {
     {
         "name": "1962",
         "country": "https://static.hltv.org/images/bigflags/30x20/AR.gif",
+        "country_name": "Argentina",
         "id": 12094,
         "team_name": "Isurus",
         "team_logo": "https://static.hltv.org/images/team/logo/7653",
@@ -2653,6 +2971,7 @@ export default {
     {
         "name": "doto",
         "country": "https://static.hltv.org/images/bigflags/30x20/FI.gif",
+        "country_name": "Finland",
         "id": 9819,
         "team_name": "HAVU",
         "team_logo": "https://static.hltv.org/images/team/logo/7865",
@@ -2662,6 +2981,7 @@ export default {
     {
         "name": "ANDROID",
         "country": "https://static.hltv.org/images/bigflags/30x20/CA.gif",
+        "country_name": "Canada",
         "id": 9043,
         "team_name": "Envy",
         "team_logo": "https://static.hltv.org/images/team/logo/5991",
@@ -2671,6 +2991,7 @@ export default {
     {
         "name": "FugLy",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 8522,
         "team_name": "Envy",
         "team_logo": "https://static.hltv.org/images/team/logo/5991",
@@ -2680,6 +3001,7 @@ export default {
     {
         "name": "J1rah",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 12593,
         "team_name": "AVANT",
         "team_logo": "https://static.hltv.org/images/team/logo/5293",
@@ -2689,6 +3011,7 @@ export default {
     {
         "name": "twist",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 7443,
         "team_name": "NiP",
         "team_logo": "https://static.hltv.org/images/team/logo/4411",
@@ -2698,6 +3021,7 @@ export default {
     {
         "name": "yel",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 10560,
         "team_name": "INTZ",
         "team_logo": "https://static.hltv.org/images/team/logo/6619",
@@ -2705,17 +3029,19 @@ export default {
         "rating": 1.03
     },
     {
-        "name": "Dima",
-        "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
-        "id": 8125,
-        "team_name": "Espada",
-        "team_logo": "https://static.hltv.org/images/team/logo/8669",
-        "maps": 130,
+        "name": "Rainwaker",
+        "country": "https://static.hltv.org/images/bigflags/30x20/BG.gif",
+        "country_name": "Bulgaria",
+        "id": 17145,
+        "team_name": "SKADE",
+        "team_logo": "https://static.hltv.org/images/team/logo/10386",
+        "maps": 126,
         "rating": 1.03
     },
     {
         "name": "f4stzin",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 18140,
         "team_name": "Keyd",
         "team_logo": "https://static.hltv.org/images/team/logo/6033",
@@ -2723,17 +3049,9 @@ export default {
         "rating": 1.03
     },
     {
-        "name": "darko",
-        "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
-        "id": 11287,
-        "team_name": "PACT",
-        "team_logo": "https://static.hltv.org/images/team/logo/8248",
-        "maps": 215,
-        "rating": 1.03
-    },
-    {
         "name": "MINISE",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 2826,
         "team_name": "ARCY",
         "team_logo": "https://static.hltv.org/images/team/logo/10494",
@@ -2743,6 +3061,7 @@ export default {
     {
         "name": "s0m",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 14365,
         "team_name": "Envy",
         "team_logo": "https://static.hltv.org/images/team/logo/5991",
@@ -2752,6 +3071,7 @@ export default {
     {
         "name": "dzt",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 10570,
         "team_name": "Keyd",
         "team_logo": "https://static.hltv.org/images/team/logo/6033",
@@ -2761,6 +3081,7 @@ export default {
     {
         "name": "mono",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 9916,
         "team_name": "Illuminar",
         "team_logo": "https://static.hltv.org/images/team/logo/8813",
@@ -2770,6 +3091,7 @@ export default {
     {
         "name": "blackpoisoN",
         "country": "https://static.hltv.org/images/bigflags/30x20/ZA.gif",
+        "country_name": "South Africa",
         "id": 7992,
         "team_name": "ATK",
         "team_logo": "https://static.hltv.org/images/team/logo/9943",
@@ -2779,6 +3101,7 @@ export default {
     {
         "name": "snatchie",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 9574,
         "team_name": "Virtus.pro",
         "team_logo": "https://static.hltv.org/images/team/logo/5378",
@@ -2788,6 +3111,7 @@ export default {
     {
         "name": "Hunter",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 13185,
         "team_name": "Rugratz",
         "team_logo": "https://static.hltv.org/images/team/logo/10017",
@@ -2797,6 +3121,7 @@ export default {
     {
         "name": "Sidney",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 15697,
         "team_name": "AGO",
         "team_logo": "https://static.hltv.org/images/team/logo/8068",
@@ -2806,6 +3131,7 @@ export default {
     {
         "name": "TMB",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 11995,
         "team_name": "Copenhagen Flames",
         "team_logo": "https://static.hltv.org/images/team/logo/7461",
@@ -2815,6 +3141,7 @@ export default {
     {
         "name": "NEKIZ",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 9482,
         "team_name": "Luminosity",
         "team_logo": "https://static.hltv.org/images/team/logo/6290",
@@ -2824,6 +3151,7 @@ export default {
     {
         "name": "steel",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 7382,
         "team_name": "Movistar Riders",
         "team_logo": "https://static.hltv.org/images/team/logo/7718",
@@ -2831,26 +3159,19 @@ export default {
         "rating": 1.03
     },
     {
-        "name": "Rainwaker",
-        "country": "https://static.hltv.org/images/bigflags/30x20/BG.gif",
-        "id": 17145,
-        "team_name": "SKADE",
-        "team_logo": "https://static.hltv.org/images/team/logo/10386",
-        "maps": 117,
-        "rating": 1.03
-    },
-    {
-        "name": "expro",
-        "country": "https://static.hltv.org/images/bigflags/30x20/CN.gif",
-        "id": 12490,
-        "team_name": "Invictus",
-        "team_logo": "https://static.hltv.org/images/team/logo/7966",
-        "maps": 140,
+        "name": "Goofy",
+        "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
+        "id": 15428,
+        "team_name": "PACT",
+        "team_logo": "https://static.hltv.org/images/team/logo/8248",
+        "maps": 248,
         "rating": 1.03
     },
     {
         "name": "VINI",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 12822,
         "team_name": "FURIA",
         "team_logo": "https://static.hltv.org/images/team/logo/8297",
@@ -2858,44 +3179,29 @@ export default {
         "rating": 1.03
     },
     {
-        "name": "SADDYX",
-        "country": "https://static.hltv.org/images/bigflags/30x20/FI.gif",
-        "id": 15563,
-        "team_name": "SJ",
-        "team_logo": "https://static.hltv.org/images/team/logo/8504",
-        "maps": 249,
-        "rating": 1.02
-    },
-    {
-        "name": "Crityourface",
-        "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
-        "id": 15900,
-        "team_name": "PACT",
-        "team_logo": "https://static.hltv.org/images/team/logo/8248",
-        "maps": 129,
-        "rating": 1.02
-    },
-    {
-        "name": "Goofy",
-        "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
-        "id": 15428,
-        "team_name": "PACT",
-        "team_logo": "https://static.hltv.org/images/team/logo/8248",
-        "maps": 235,
-        "rating": 1.02
-    },
-    {
         "name": "SOKER",
         "country": "https://static.hltv.org/images/bigflags/30x20/ES.gif",
+        "country_name": "Spain",
         "id": 7388,
         "team_name": "Movistar Riders",
         "team_logo": "https://static.hltv.org/images/team/logo/7718",
-        "maps": 193,
+        "maps": 201,
+        "rating": 1.02
+    },
+    {
+        "name": "SADDYX",
+        "country": "https://static.hltv.org/images/bigflags/30x20/FI.gif",
+        "country_name": "Finland",
+        "id": 15563,
+        "team_name": "SJ",
+        "team_logo": "https://static.hltv.org/images/team/logo/8504",
+        "maps": 251,
         "rating": 1.02
     },
     {
         "name": "SkulL",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 14290,
         "team_name": "Genuine",
         "team_logo": "https://static.hltv.org/images/team/logo/9747",
@@ -2905,6 +3211,7 @@ export default {
     {
         "name": "Llamas",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 16529,
         "team_name": "Ground Zero",
         "team_logo": "https://static.hltv.org/images/team/logo/8536",
@@ -2914,6 +3221,7 @@ export default {
     {
         "name": "BURNRUOk",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 9636,
         "team_name": "Ground Zero",
         "team_logo": "https://static.hltv.org/images/team/logo/8536",
@@ -2923,6 +3231,7 @@ export default {
     {
         "name": "neaLaN",
         "country": "https://static.hltv.org/images/bigflags/30x20/KZ.gif",
+        "country_name": "Kazakhstan",
         "id": 11940,
         "team_name": "Syman",
         "team_logo": "https://static.hltv.org/images/team/logo/8772",
@@ -2932,6 +3241,7 @@ export default {
     {
         "name": "mopoz",
         "country": "https://static.hltv.org/images/bigflags/30x20/ES.gif",
+        "country_name": "Spain",
         "id": 9254,
         "team_name": "Movistar Riders",
         "team_logo": "https://static.hltv.org/images/team/logo/7718",
@@ -2939,8 +3249,19 @@ export default {
         "rating": 1.02
     },
     {
+        "name": "expro",
+        "country": "https://static.hltv.org/images/bigflags/30x20/CN.gif",
+        "country_name": "China",
+        "id": 12490,
+        "team_name": "Invictus",
+        "team_logo": "https://static.hltv.org/images/team/logo/7966",
+        "maps": 148,
+        "rating": 1.02
+    },
+    {
         "name": "Savage",
         "country": "https://static.hltv.org/images/bigflags/30x20/CN.gif",
+        "country_name": "China",
         "id": 180,
         "team_name": "5POWER",
         "team_logo": "https://static.hltv.org/images/team/logo/7092",
@@ -2950,6 +3271,7 @@ export default {
     {
         "name": "morelz",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 8324,
         "team_name": "Wisla Krakow",
         "team_logo": "https://static.hltv.org/images/team/logo/10426",
@@ -2959,6 +3281,7 @@ export default {
     {
         "name": "olofmeister",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 885,
         "team_name": "FaZe",
         "team_logo": "https://static.hltv.org/images/team/logo/6667",
@@ -2968,6 +3291,7 @@ export default {
     {
         "name": "foxz",
         "country": "https://static.hltv.org/images/bigflags/30x20/TH.gif",
+        "country_name": "Thailand",
         "id": 14577,
         "team_name": "Alpha Red",
         "team_logo": "https://static.hltv.org/images/team/logo/8848",
@@ -2977,6 +3301,7 @@ export default {
     {
         "name": "LUCAS1",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 8566,
         "team_name": "Luminosity",
         "team_logo": "https://static.hltv.org/images/team/logo/6290",
@@ -2986,6 +3311,7 @@ export default {
     {
         "name": "max",
         "country": "https://static.hltv.org/images/bigflags/30x20/UY.gif",
+        "country_name": "Uruguay",
         "id": 12092,
         "team_name": "Isurus",
         "team_logo": "https://static.hltv.org/images/team/logo/7653",
@@ -2995,6 +3321,7 @@ export default {
     {
         "name": "friberg",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 7148,
         "team_name": "Heroic",
         "team_logo": "https://static.hltv.org/images/team/logo/7175",
@@ -3004,6 +3331,7 @@ export default {
     {
         "name": "bondik",
         "country": "https://static.hltv.org/images/bigflags/30x20/UA.gif",
+        "country_name": "Ukraine",
         "id": 2131,
         "team_name": "Winstrike",
         "team_logo": "https://static.hltv.org/images/team/logo/9183",
@@ -3013,6 +3341,7 @@ export default {
     {
         "name": "Basso",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 10443,
         "team_name": "Copenhagen Flames",
         "team_logo": "https://static.hltv.org/images/team/logo/7461",
@@ -3022,6 +3351,7 @@ export default {
     {
         "name": "Mayker",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 14957,
         "team_name": "Genuine",
         "team_logo": "https://static.hltv.org/images/team/logo/9747",
@@ -3031,6 +3361,7 @@ export default {
     {
         "name": "seb",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 3886,
         "team_name": "Singularity",
         "team_logo": "https://static.hltv.org/images/team/logo/6978",
@@ -3040,15 +3371,17 @@ export default {
     {
         "name": "R0b3n",
         "country": "https://static.hltv.org/images/bigflags/30x20/LV.gif",
+        "country_name": "Latvia",
         "id": 14205,
         "team_name": "Unique",
         "team_logo": "https://static.hltv.org/images/team/logo/9287",
-        "maps": 206,
+        "maps": 208,
         "rating": 1.02
     },
     {
         "name": "denis",
         "country": "https://static.hltv.org/images/bigflags/30x20/DE.gif",
+        "country_name": "Germany",
         "id": 7511,
         "team_name": "Sprout",
         "team_logo": "https://static.hltv.org/images/team/logo/8637",
@@ -3058,6 +3391,7 @@ export default {
     {
         "name": "niko",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 10264,
         "team_name": "OpTic",
         "team_logo": "https://static.hltv.org/images/team/logo/6615",
@@ -3067,6 +3401,7 @@ export default {
     {
         "name": "interz",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 15071,
         "team_name": "Gambit Youngsters",
         "team_logo": "https://static.hltv.org/images/team/logo/9976",
@@ -3076,6 +3411,7 @@ export default {
     {
         "name": "Zellsis",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 13188,
         "team_name": "Lazarus",
         "team_logo": "https://static.hltv.org/images/team/logo/9945",
@@ -3085,6 +3421,7 @@ export default {
     {
         "name": "Liazz",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 10588,
         "team_name": "100 Thieves",
         "team_logo": "https://static.hltv.org/images/team/logo/8474",
@@ -3094,6 +3431,7 @@ export default {
     {
         "name": "jnt",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 11747,
         "team_name": "Sharks",
         "team_logo": "https://static.hltv.org/images/team/logo/8113",
@@ -3103,6 +3441,7 @@ export default {
     {
         "name": "n0rb3r7",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 16612,
         "team_name": "Syman",
         "team_logo": "https://static.hltv.org/images/team/logo/8772",
@@ -3112,6 +3451,7 @@ export default {
     {
         "name": "kaper",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 14221,
         "team_name": "Wisla Krakow",
         "team_logo": "https://static.hltv.org/images/team/logo/10426",
@@ -3119,8 +3459,19 @@ export default {
         "rating": 1.01
     },
     {
+        "name": "Surreal",
+        "country": "https://static.hltv.org/images/bigflags/30x20/GB.gif",
+        "country_name": "United Kingdom",
+        "id": 9019,
+        "team_name": "Phoenix",
+        "team_logo": "https://static.hltv.org/images/team/logo/10420",
+        "maps": 301,
+        "rating": 1.01
+    },
+    {
         "name": "svyat",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 12016,
         "team_name": "Hard Legion",
         "team_logo": "https://static.hltv.org/images/team/logo/10421",
@@ -3130,6 +3481,7 @@ export default {
     {
         "name": "Console",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 10404,
         "team_name": "Copenhagen Flames",
         "team_logo": "https://static.hltv.org/images/team/logo/7461",
@@ -3137,17 +3489,19 @@ export default {
         "rating": 1.01
     },
     {
-        "name": "Surreal",
-        "country": "https://static.hltv.org/images/bigflags/30x20/GB.gif",
-        "id": 9019,
-        "team_name": "Phoenix",
-        "team_logo": "https://static.hltv.org/images/team/logo/10420",
-        "maps": 299,
+        "name": "DeathZz",
+        "country": "https://static.hltv.org/images/bigflags/30x20/ES.gif",
+        "country_name": "Spain",
+        "id": 13093,
+        "team_name": "Movistar Riders",
+        "team_logo": "https://static.hltv.org/images/team/logo/7718",
+        "maps": 153,
         "rating": 1.01
     },
     {
         "name": "GuardiaN",
         "country": "https://static.hltv.org/images/bigflags/30x20/SK.gif",
+        "country_name": "Slovakia",
         "id": 2757,
         "team_name": "Natus Vincere",
         "team_logo": "https://static.hltv.org/images/team/logo/4608",
@@ -3157,6 +3511,7 @@ export default {
     {
         "name": "JT",
         "country": "https://static.hltv.org/images/bigflags/30x20/ZA.gif",
+        "country_name": "South Africa",
         "id": 11630,
         "team_name": "ATK",
         "team_logo": "https://static.hltv.org/images/team/logo/9943",
@@ -3166,6 +3521,7 @@ export default {
     {
         "name": "YJ",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 11746,
         "team_name": "W7M",
         "team_logo": "https://static.hltv.org/images/team/logo/8574",
@@ -3175,6 +3531,7 @@ export default {
     {
         "name": "shuadapai",
         "country": "https://static.hltv.org/images/bigflags/30x20/CN.gif",
+        "country_name": "China",
         "id": 11576,
         "team_name": "R-Stars",
         "team_logo": "https://static.hltv.org/images/team/logo/10472",
@@ -3184,6 +3541,7 @@ export default {
     {
         "name": "Snappi",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 922,
         "team_name": "Heroic",
         "team_logo": "https://static.hltv.org/images/team/logo/7175",
@@ -3193,6 +3551,7 @@ export default {
     {
         "name": "mirbit",
         "country": "https://static.hltv.org/images/bigflags/30x20/DE.gif",
+        "country_name": "Germany",
         "id": 11701,
         "team_name": "Sprout",
         "team_logo": "https://static.hltv.org/images/team/logo/8637",
@@ -3202,6 +3561,7 @@ export default {
     {
         "name": "oskarish",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 8321,
         "team_name": "Illuminar",
         "team_logo": "https://static.hltv.org/images/team/logo/8813",
@@ -3211,6 +3571,7 @@ export default {
     {
         "name": "H4RR3",
         "country": "https://static.hltv.org/images/bigflags/30x20/NO.gif",
+        "country_name": "Norway",
         "id": 14311,
         "team_name": "Nordavind",
         "team_logo": "https://static.hltv.org/images/team/logo/8769",
@@ -3220,6 +3581,7 @@ export default {
     {
         "name": "nafany",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 16921,
         "team_name": "Gambit Youngsters",
         "team_logo": "https://static.hltv.org/images/team/logo/9976",
@@ -3227,26 +3589,9 @@ export default {
         "rating": 1.01
     },
     {
-        "name": "DeathZz",
-        "country": "https://static.hltv.org/images/bigflags/30x20/ES.gif",
-        "id": 13093,
-        "team_name": "Movistar Riders",
-        "team_logo": "https://static.hltv.org/images/team/logo/7718",
-        "maps": 145,
-        "rating": 1.01
-    },
-    {
-        "name": "SPELLAN",
-        "country": "https://static.hltv.org/images/bigflags/30x20/BG.gif",
-        "id": 11217,
-        "team_name": "SKADE",
-        "team_logo": "https://static.hltv.org/images/team/logo/10386",
-        "maps": 299,
-        "rating": 1.01
-    },
-    {
         "name": "stanislaw",
         "country": "https://static.hltv.org/images/bigflags/30x20/CA.gif",
+        "country_name": "Canada",
         "id": 8507,
         "team_name": "Evil Geniuses",
         "team_logo": "https://static.hltv.org/images/team/logo/10399",
@@ -3256,6 +3601,7 @@ export default {
     {
         "name": "ALEX",
         "country": "https://static.hltv.org/images/bigflags/30x20/GB.gif",
+        "country_name": "United Kingdom",
         "id": 8184,
         "team_name": "Vitality",
         "team_logo": "https://static.hltv.org/images/team/logo/9565",
@@ -3265,6 +3611,7 @@ export default {
     {
         "name": "Spiidi",
         "country": "https://static.hltv.org/images/bigflags/30x20/DE.gif",
+        "country_name": "Germany",
         "id": 7499,
         "team_name": "Sprout",
         "team_logo": "https://static.hltv.org/images/team/logo/8637",
@@ -3274,6 +3621,7 @@ export default {
     {
         "name": "cromen",
         "country": "https://static.hltv.org/images/bigflags/30x20/NO.gif",
+        "country_name": "Norway",
         "id": 10397,
         "team_name": "Nordavind",
         "team_logo": "https://static.hltv.org/images/team/logo/8769",
@@ -3283,6 +3631,7 @@ export default {
     {
         "name": "arvid",
         "country": "https://static.hltv.org/images/bigflags/30x20/FI.gif",
+        "country_name": "Finland",
         "id": 9325,
         "team_name": "SJ",
         "team_logo": "https://static.hltv.org/images/team/logo/8504",
@@ -3292,6 +3641,7 @@ export default {
     {
         "name": "Aleksib",
         "country": "https://static.hltv.org/images/bigflags/30x20/FI.gif",
+        "country_name": "Finland",
         "id": 9816,
         "team_name": "ENCE",
         "team_logo": "https://static.hltv.org/images/team/logo/4869",
@@ -3301,6 +3651,7 @@ export default {
     {
         "name": "Domsterr",
         "country": "https://static.hltv.org/images/bigflags/30x20/ZA.gif",
+        "country_name": "South Africa",
         "id": 9310,
         "team_name": "ATK",
         "team_logo": "https://static.hltv.org/images/team/logo/9943",
@@ -3308,8 +3659,19 @@ export default {
         "rating": 1.01
     },
     {
+        "name": "SPELLAN",
+        "country": "https://static.hltv.org/images/bigflags/30x20/BG.gif",
+        "country_name": "Bulgaria",
+        "id": 11217,
+        "team_name": "SKADE",
+        "team_logo": "https://static.hltv.org/images/team/logo/10386",
+        "maps": 308,
+        "rating": 1.01
+    },
+    {
         "name": "grux",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 15096,
         "team_name": "Red Reserve",
         "team_logo": "https://static.hltv.org/images/team/logo/7613",
@@ -3319,6 +3681,7 @@ export default {
     {
         "name": "Shakezullah",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 14203,
         "team_name": "Singularity",
         "team_logo": "https://static.hltv.org/images/team/logo/6978",
@@ -3328,6 +3691,7 @@ export default {
     {
         "name": "fitch",
         "country": "https://static.hltv.org/images/bigflags/30x20/KZ.gif",
+        "country_name": "Kazakhstan",
         "id": 10052,
         "team_name": "AVANGAR",
         "team_logo": "https://static.hltv.org/images/team/logo/8120",
@@ -3337,6 +3701,7 @@ export default {
     {
         "name": "MoeycQ",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 8770,
         "team_name": "MC",
         "team_logo": "https://static.hltv.org/images/team/logo/8738",
@@ -3346,6 +3711,7 @@ export default {
     {
         "name": "Lekr0",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 9261,
         "team_name": "NiP",
         "team_logo": "https://static.hltv.org/images/team/logo/4411",
@@ -3353,17 +3719,19 @@ export default {
         "rating": 1.0
     },
     {
-        "name": "KHRN",
-        "country": "https://static.hltv.org/images/bigflags/30x20/FI.gif",
-        "id": 971,
-        "team_name": "SJ",
-        "team_logo": "https://static.hltv.org/images/team/logo/8504",
-        "maps": 241,
+        "name": "FinigaN",
+        "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
+        "id": 17305,
+        "team_name": "Espada",
+        "team_logo": "https://static.hltv.org/images/team/logo/8669",
+        "maps": 116,
         "rating": 1.0
     },
     {
         "name": "Noisia",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 11492,
         "team_name": "MC",
         "team_logo": "https://static.hltv.org/images/team/logo/8738",
@@ -3373,6 +3741,7 @@ export default {
     {
         "name": "phr",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 11891,
         "team_name": "AGO",
         "team_logo": "https://static.hltv.org/images/team/logo/8068",
@@ -3380,8 +3749,19 @@ export default {
         "rating": 1.0
     },
     {
+        "name": "KHRN",
+        "country": "https://static.hltv.org/images/bigflags/30x20/FI.gif",
+        "country_name": "Finland",
+        "id": 971,
+        "team_name": "SJ",
+        "team_logo": "https://static.hltv.org/images/team/logo/8504",
+        "maps": 243,
+        "rating": 1.0
+    },
+    {
         "name": "Vegi",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 15204,
         "team_name": "Virtus.pro",
         "team_logo": "https://static.hltv.org/images/team/logo/5378",
@@ -3391,6 +3771,7 @@ export default {
     {
         "name": "RpK",
         "country": "https://static.hltv.org/images/bigflags/30x20/FR.gif",
+        "country_name": "France",
         "id": 7169,
         "team_name": "Vitality",
         "team_logo": "https://static.hltv.org/images/team/logo/9565",
@@ -3400,6 +3781,7 @@ export default {
     {
         "name": "mynio",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 4829,
         "team_name": "Wisla Krakow",
         "team_logo": "https://static.hltv.org/images/team/logo/10426",
@@ -3409,6 +3791,7 @@ export default {
     {
         "name": "vanity",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 12089,
         "team_name": "eUnited",
         "team_logo": "https://static.hltv.org/images/team/logo/7106",
@@ -3418,6 +3801,7 @@ export default {
     {
         "name": "ableJ",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 16770,
         "team_name": "FURIA",
         "team_logo": "https://static.hltv.org/images/team/logo/8297",
@@ -3427,6 +3811,7 @@ export default {
     {
         "name": "cajunb",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 2469,
         "team_name": "North",
         "team_logo": "https://static.hltv.org/images/team/logo/7533",
@@ -3436,6 +3821,7 @@ export default {
     {
         "name": "zander",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 9876,
         "team_name": "Rugratz",
         "team_logo": "https://static.hltv.org/images/team/logo/10017",
@@ -3445,6 +3831,7 @@ export default {
     {
         "name": "Gratisfaction",
         "country": "https://static.hltv.org/images/bigflags/30x20/NZ.gif",
+        "country_name": "New Zealand",
         "id": 9686,
         "team_name": "100 Thieves",
         "team_logo": "https://static.hltv.org/images/team/logo/8474",
@@ -3454,6 +3841,7 @@ export default {
     {
         "name": "gade",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 8875,
         "team_name": "North",
         "team_logo": "https://static.hltv.org/images/team/logo/7533",
@@ -3463,6 +3851,7 @@ export default {
     {
         "name": "RuStY",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 10784,
         "team_name": "GamerLegion",
         "team_logo": "https://static.hltv.org/images/team/logo/9928",
@@ -3472,6 +3861,7 @@ export default {
     {
         "name": "LOGAN",
         "country": "https://static.hltv.org/images/bigflags/30x20/FR.gif",
+        "country_name": "France",
         "id": 13042,
         "team_name": "Heretics",
         "team_logo": "https://static.hltv.org/images/team/logo/8346",
@@ -3481,6 +3871,7 @@ export default {
     {
         "name": "Twixie",
         "country": "https://static.hltv.org/images/bigflags/30x20/FI.gif",
+        "country_name": "Finland",
         "id": 15180,
         "team_name": "HAVU",
         "team_logo": "https://static.hltv.org/images/team/logo/7865",
@@ -3490,6 +3881,7 @@ export default {
     {
         "name": "wannafly",
         "country": "https://static.hltv.org/images/bigflags/30x20/TH.gif",
+        "country_name": "Thailand",
         "id": 13461,
         "team_name": "Lucid Dream",
         "team_logo": "https://static.hltv.org/images/team/logo/8680",
@@ -3497,8 +3889,19 @@ export default {
         "rating": 0.99
     },
     {
+        "name": "Rock1nG",
+        "country": "https://static.hltv.org/images/bigflags/30x20/BG.gif",
+        "country_name": "Bulgaria",
+        "id": 10762,
+        "team_name": "SKADE",
+        "team_logo": "https://static.hltv.org/images/team/logo/10386",
+        "maps": 142,
+        "rating": 0.99
+    },
+    {
         "name": "Snax",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 2553,
         "team_name": "Virtus.pro",
         "team_logo": "https://static.hltv.org/images/team/logo/5378",
@@ -3508,6 +3911,7 @@ export default {
     {
         "name": "DeStiNy",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 9483,
         "team_name": "INTZ",
         "team_logo": "https://static.hltv.org/images/team/logo/6619",
@@ -3515,17 +3919,9 @@ export default {
         "rating": 0.99
     },
     {
-        "name": "Rock1nG",
-        "country": "https://static.hltv.org/images/bigflags/30x20/BG.gif",
-        "id": 10762,
-        "team_name": "SKADE",
-        "team_logo": "https://static.hltv.org/images/team/logo/10386",
-        "maps": 133,
-        "rating": 0.99
-    },
-    {
         "name": "MSL",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 7156,
         "team_name": "OpTic",
         "team_logo": "https://static.hltv.org/images/team/logo/6615",
@@ -3535,6 +3931,7 @@ export default {
     {
         "name": "Fadey",
         "country": "https://static.hltv.org/images/bigflags/30x20/ZA.gif",
+        "country_name": "South Africa",
         "id": 10611,
         "team_name": "ATK",
         "team_logo": "https://static.hltv.org/images/team/logo/9943",
@@ -3544,6 +3941,7 @@ export default {
     {
         "name": "xseveN",
         "country": "https://static.hltv.org/images/bigflags/30x20/FI.gif",
+        "country_name": "Finland",
         "id": 7248,
         "team_name": "ENCE",
         "team_logo": "https://static.hltv.org/images/team/logo/4869",
@@ -3553,6 +3951,7 @@ export default {
     {
         "name": "AcilioN",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 8151,
         "team_name": "Copenhagen Flames",
         "team_logo": "https://static.hltv.org/images/team/logo/7461",
@@ -3562,6 +3961,7 @@ export default {
     {
         "name": "Marek",
         "country": "https://static.hltv.org/images/bigflags/30x20/TW.gif",
+        "country_name": "Taiwan",
         "id": 8598,
         "team_name": "EHOME",
         "team_logo": "https://static.hltv.org/images/team/logo/7024",
@@ -3571,6 +3971,7 @@ export default {
     {
         "name": "OKOLICIOUZ",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 11652,
         "team_name": "Unicorns of Love",
         "team_logo": "https://static.hltv.org/images/team/logo/9812",
@@ -3580,6 +3981,7 @@ export default {
     {
         "name": "Edward",
         "country": "https://static.hltv.org/images/bigflags/30x20/UA.gif",
+        "country_name": "Ukraine",
         "id": 483,
         "team_name": "Natus Vincere",
         "team_logo": "https://static.hltv.org/images/team/logo/4608",
@@ -3589,6 +3991,7 @@ export default {
     {
         "name": "neptune",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 12101,
         "team_name": "Swole Patrol",
         "team_logo": "https://static.hltv.org/images/team/logo/7726",
@@ -3598,6 +4001,7 @@ export default {
     {
         "name": "LETN1",
         "country": "https://static.hltv.org/images/bigflags/30x20/RS.gif",
+        "country_name": "Serbia",
         "id": 4216,
         "team_name": "CR4ZY",
         "team_logo": "https://static.hltv.org/images/team/logo/10150",
@@ -3607,6 +4011,7 @@ export default {
     {
         "name": "v1c7oR",
         "country": "https://static.hltv.org/images/bigflags/30x20/BG.gif",
+        "country_name": "Bulgaria",
         "id": 7834,
         "team_name": "Windigo",
         "team_logo": "https://static.hltv.org/images/team/logo/8513",
@@ -3614,8 +4019,29 @@ export default {
         "rating": 0.98
     },
     {
+        "name": "aVN",
+        "country": "https://static.hltv.org/images/bigflags/30x20/RS.gif",
+        "country_name": "Serbia",
+        "id": 5351,
+        "team_name": "Juggernauts",
+        "team_logo": "https://static.hltv.org/images/team/logo/10509",
+        "maps": 127,
+        "rating": 0.98
+    },
+    {
+        "name": "rafftu",
+        "country": "https://static.hltv.org/images/bigflags/30x20/BG.gif",
+        "country_name": "Bulgaria",
+        "id": 16412,
+        "team_name": "SKADE",
+        "team_logo": "https://static.hltv.org/images/team/logo/10386",
+        "maps": 128,
+        "rating": 0.98
+    },
+    {
         "name": "chopper",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 7716,
         "team_name": "Spirit",
         "team_logo": "https://static.hltv.org/images/team/logo/7020",
@@ -3625,6 +4051,7 @@ export default {
     {
         "name": "KrizzeN",
         "country": "https://static.hltv.org/images/bigflags/30x20/KZ.gif",
+        "country_name": "Kazakhstan",
         "id": 12161,
         "team_name": "Winstrike",
         "team_logo": "https://static.hltv.org/images/team/logo/9183",
@@ -3634,6 +4061,7 @@ export default {
     {
         "name": "Lucaozy",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 18717,
         "team_name": "DETONA",
         "team_logo": "https://static.hltv.org/images/team/logo/8902",
@@ -3643,6 +4071,7 @@ export default {
     {
         "name": "RUBINO",
         "country": "https://static.hltv.org/images/bigflags/30x20/NO.gif",
+        "country_name": "Norway",
         "id": 1485,
         "team_name": "Nordavind",
         "team_logo": "https://static.hltv.org/images/team/logo/8769",
@@ -3650,17 +4079,9 @@ export default {
         "rating": 0.98
     },
     {
-        "name": "aVN",
-        "country": "https://static.hltv.org/images/bigflags/30x20/RS.gif",
-        "id": 5351,
-        "team_name": "Juggernauts",
-        "team_logo": "https://static.hltv.org/images/team/logo/10509",
-        "maps": 122,
-        "rating": 0.97
-    },
-    {
         "name": "SANJI",
         "country": "https://static.hltv.org/images/bigflags/30x20/UZ.gif",
+        "country_name": "Uzbekistan",
         "id": 11716,
         "team_name": "AVANGAR",
         "team_logo": "https://static.hltv.org/images/team/logo/8120",
@@ -3670,6 +4091,7 @@ export default {
     {
         "name": "AZR",
         "country": "https://static.hltv.org/images/bigflags/30x20/AU.gif",
+        "country_name": "Australia",
         "id": 8082,
         "team_name": "100 Thieves",
         "team_logo": "https://static.hltv.org/images/team/logo/8474",
@@ -3677,17 +4099,9 @@ export default {
         "rating": 0.97
     },
     {
-        "name": "rafftu",
-        "country": "https://static.hltv.org/images/bigflags/30x20/BG.gif",
-        "id": 16412,
-        "team_name": "SKADE",
-        "team_logo": "https://static.hltv.org/images/team/logo/10386",
-        "maps": 119,
-        "rating": 0.97
-    },
-    {
         "name": "Keoz",
         "country": "https://static.hltv.org/images/bigflags/30x20/BE.gif",
+        "country_name": "Belgium",
         "id": 15117,
         "team_name": "Syman",
         "team_logo": "https://static.hltv.org/images/team/logo/8772",
@@ -3697,6 +4111,7 @@ export default {
     {
         "name": "Kvik",
         "country": "https://static.hltv.org/images/bigflags/30x20/LT.gif",
+        "country_name": "Lithuania",
         "id": 8459,
         "team_name": "Winstrike",
         "team_logo": "https://static.hltv.org/images/team/logo/9183",
@@ -3706,6 +4121,7 @@ export default {
     {
         "name": "bubble",
         "country": "https://static.hltv.org/images/bigflags/30x20/BG.gif",
+        "country_name": "Bulgaria",
         "id": 2799,
         "team_name": "Windigo",
         "team_logo": "https://static.hltv.org/images/team/logo/8513",
@@ -3713,17 +4129,29 @@ export default {
         "rating": 0.97
     },
     {
+        "name": "h1glaiN",
+        "country": "https://static.hltv.org/images/bigflags/30x20/UA.gif",
+        "country_name": "Ukraine",
+        "id": 15374,
+        "team_name": "Espada",
+        "team_logo": "https://static.hltv.org/images/team/logo/8669",
+        "maps": 118,
+        "rating": 0.97
+    },
+    {
         "name": "xartE",
         "country": "https://static.hltv.org/images/bigflags/30x20/FI.gif",
+        "country_name": "Finland",
         "id": 7537,
         "team_name": "SJ",
         "team_logo": "https://static.hltv.org/images/team/logo/8504",
-        "maps": 249,
+        "maps": 251,
         "rating": 0.96
     },
     {
         "name": "ben1337",
         "country": "https://static.hltv.org/images/bigflags/30x20/US.gif",
+        "country_name": "United States",
         "id": 13250,
         "team_name": "Party Astronauts",
         "team_logo": "https://static.hltv.org/images/team/logo/8038",
@@ -3733,6 +4161,7 @@ export default {
     {
         "name": "RAiLWAY",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 14161,
         "team_name": "Espada",
         "team_logo": "https://static.hltv.org/images/team/logo/8669",
@@ -3742,6 +4171,7 @@ export default {
     {
         "name": "TACO",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 9217,
         "team_name": "MIBR",
         "team_logo": "https://static.hltv.org/images/team/logo/9215",
@@ -3751,6 +4181,7 @@ export default {
     {
         "name": "B1NGO",
         "country": "https://static.hltv.org/images/bigflags/30x20/CN.gif",
+        "country_name": "China",
         "id": 16778,
         "team_name": "EHOME",
         "team_logo": "https://static.hltv.org/images/team/logo/7024",
@@ -3760,6 +4191,7 @@ export default {
     {
         "name": "kenzor",
         "country": "https://static.hltv.org/images/bigflags/30x20/UA.gif",
+        "country_name": "Ukraine",
         "id": 11515,
         "team_name": "pro100",
         "team_logo": "https://static.hltv.org/images/team/logo/7898",
@@ -3769,6 +4201,7 @@ export default {
     {
         "name": "JiNKZ",
         "country": "https://static.hltv.org/images/bigflags/30x20/FR.gif",
+        "country_name": "France",
         "id": 15120,
         "team_name": "Heretics",
         "team_logo": "https://static.hltv.org/images/team/logo/8346",
@@ -3778,6 +4211,7 @@ export default {
     {
         "name": "karrigan",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 429,
         "team_name": "mousesports",
         "team_logo": "https://static.hltv.org/images/team/logo/4494",
@@ -3787,6 +4221,7 @@ export default {
     {
         "name": "FIOURN",
         "country": "https://static.hltv.org/images/bigflags/30x20/CN.gif",
+        "country_name": "China",
         "id": 14140,
         "team_name": "EHOME",
         "team_logo": "https://static.hltv.org/images/team/logo/7024",
@@ -3796,15 +4231,17 @@ export default {
     {
         "name": "lunAtic",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 9798,
         "team_name": "PACT",
         "team_logo": "https://static.hltv.org/images/team/logo/8248",
-        "maps": 213,
+        "maps": 226,
         "rating": 0.95
     },
     {
         "name": "AdreN",
         "country": "https://static.hltv.org/images/bigflags/30x20/KZ.gif",
+        "country_name": "Kazakhstan",
         "id": 334,
         "team_name": "AVANGAR",
         "team_logo": "https://static.hltv.org/images/team/logo/8120",
@@ -3814,6 +4251,7 @@ export default {
     {
         "name": "devoduvek",
         "country": "https://static.hltv.org/images/bigflags/30x20/FR.gif",
+        "country_name": "France",
         "id": 10569,
         "team_name": "Heretics",
         "team_logo": "https://static.hltv.org/images/team/logo/8346",
@@ -3823,6 +4261,7 @@ export default {
     {
         "name": "tiziaN",
         "country": "https://static.hltv.org/images/bigflags/30x20/DE.gif",
+        "country_name": "Germany",
         "id": 5796,
         "team_name": "BIG",
         "team_logo": "https://static.hltv.org/images/team/logo/7532",
@@ -3832,6 +4271,7 @@ export default {
     {
         "name": "t0rick",
         "country": "https://static.hltv.org/images/bigflags/30x20/AZ.gif",
+        "country_name": "Azerbaijan",
         "id": 9382,
         "team_name": "Syman",
         "team_logo": "https://static.hltv.org/images/team/logo/8772",
@@ -3841,6 +4281,7 @@ export default {
     {
         "name": "HooXi",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 10096,
         "team_name": "Copenhagen Flames",
         "team_logo": "https://static.hltv.org/images/team/logo/7461",
@@ -3850,6 +4291,7 @@ export default {
     {
         "name": "TaZ",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 161,
         "team_name": "ARCY",
         "team_logo": "https://static.hltv.org/images/team/logo/10494",
@@ -3859,6 +4301,7 @@ export default {
     {
         "name": "Golden",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 11110,
         "team_name": "fnatic",
         "team_logo": "https://static.hltv.org/images/team/logo/4991",
@@ -3868,6 +4311,7 @@ export default {
     {
         "name": "sAw",
         "country": "https://static.hltv.org/images/bigflags/30x20/FI.gif",
+        "country_name": "Finland",
         "id": 7821,
         "team_name": "HAVU",
         "team_logo": "https://static.hltv.org/images/team/logo/7865",
@@ -3877,6 +4321,7 @@ export default {
     {
         "name": "wayLander",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 7796,
         "team_name": "pro100",
         "team_logo": "https://static.hltv.org/images/team/logo/7898",
@@ -3886,6 +4331,7 @@ export default {
     {
         "name": "GeT_RiGhT",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 39,
         "team_name": "NiP",
         "team_logo": "https://static.hltv.org/images/team/logo/4411",
@@ -3895,6 +4341,7 @@ export default {
     {
         "name": "nak",
         "country": "https://static.hltv.org/images/bigflags/30x20/BR.gif",
+        "country_name": "Brazil",
         "id": 169,
         "team_name": "RED Canids",
         "team_logo": "https://static.hltv.org/images/team/logo/7176",
@@ -3904,6 +4351,7 @@ export default {
     {
         "name": "ANGE1",
         "country": "https://static.hltv.org/images/bigflags/30x20/UA.gif",
+        "country_name": "Ukraine",
         "id": 339,
         "team_name": "HellRaisers",
         "team_logo": "https://static.hltv.org/images/team/logo/5310",
@@ -3911,8 +4359,19 @@ export default {
         "rating": 0.92
     },
     {
+        "name": "BERRY",
+        "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
+        "id": 921,
+        "team_name": "Ambush",
+        "team_logo": "https://static.hltv.org/images/team/logo/7674",
+        "maps": 121,
+        "rating": 0.92
+    },
+    {
         "name": "Xizt",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 884,
         "team_name": "fnatic",
         "team_logo": "https://static.hltv.org/images/team/logo/4991",
@@ -3922,6 +4381,7 @@ export default {
     {
         "name": "S0tF1k",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 9081,
         "team_name": "Spirit",
         "team_logo": "https://static.hltv.org/images/team/logo/7020",
@@ -3931,6 +4391,7 @@ export default {
     {
         "name": "kRYSTAL",
         "country": "https://static.hltv.org/images/bigflags/30x20/DE.gif",
+        "country_name": "Germany",
         "id": 7218,
         "team_name": "GODSENT",
         "team_logo": "https://static.hltv.org/images/team/logo/6902",
@@ -3940,6 +4401,7 @@ export default {
     {
         "name": "djL",
         "country": "https://static.hltv.org/images/bigflags/30x20/SE.gif",
+        "country_name": "Sweden",
         "id": 12572,
         "team_name": "Japaleno",
         "team_logo": "https://static.hltv.org/images/team/logo/7144",
@@ -3949,6 +4411,7 @@ export default {
     {
         "name": "ScrunK",
         "country": "https://static.hltv.org/images/bigflags/30x20/DE.gif",
+        "country_name": "Germany",
         "id": 8212,
         "team_name": "expert",
         "team_logo": "https://static.hltv.org/images/team/logo/9393",
@@ -3958,6 +4421,7 @@ export default {
     {
         "name": "daps",
         "country": "https://static.hltv.org/images/bigflags/30x20/CA.gif",
+        "country_name": "Canada",
         "id": 8521,
         "team_name": "NRG",
         "team_logo": "https://static.hltv.org/images/team/logo/6673",
@@ -3967,6 +4431,7 @@ export default {
     {
         "name": "alecks",
         "country": "https://static.hltv.org/images/bigflags/30x20/SG.gif",
+        "country_name": "Singapore",
         "id": 9170,
         "team_name": "BOOT",
         "team_logo": "https://static.hltv.org/images/team/logo/6898",
@@ -3976,6 +4441,7 @@ export default {
     {
         "name": "nawrot",
         "country": "https://static.hltv.org/images/bigflags/30x20/PL.gif",
+        "country_name": "Poland",
         "id": 15726,
         "team_name": "Izako Boars",
         "team_logo": "https://static.hltv.org/images/team/logo/7681",
@@ -3985,6 +4451,7 @@ export default {
     {
         "name": "crush",
         "country": "https://static.hltv.org/images/bigflags/30x20/UA.gif",
+        "country_name": "Ukraine",
         "id": 9348,
         "team_name": "HellRaisers",
         "team_logo": "https://static.hltv.org/images/team/logo/5310",
@@ -3994,15 +4461,17 @@ export default {
     {
         "name": "PASHANOJ",
         "country": "https://static.hltv.org/images/bigflags/30x20/RU.gif",
+        "country_name": "Russia",
         "id": 13779,
         "team_name": "Unique",
         "team_logo": "https://static.hltv.org/images/team/logo/9287",
-        "maps": 206,
+        "maps": 208,
         "rating": 0.87
     },
     {
         "name": "HUNDEN",
         "country": "https://static.hltv.org/images/bigflags/30x20/DK.gif",
+        "country_name": "Denmark",
         "id": 7415,
         "team_name": "Tricked",
         "team_logo": "https://static.hltv.org/images/team/logo/4602",
@@ -4012,6 +4481,7 @@ export default {
     {
         "name": "advent",
         "country": "https://static.hltv.org/images/bigflags/30x20/CN.gif",
+        "country_name": "China",
         "id": 8600,
         "team_name": "ViCi",
         "team_logo": "https://static.hltv.org/images/team/logo/7606",
@@ -4021,13 +4491,14 @@ export default {
     {
         "name": "DuDe",
         "country": "https://static.hltv.org/images/bigflags/30x20/DE.gif",
+        "country_name": "Germany",
         "id": 10980,
         "team_name": "ALTERNATE aTTaX",
         "team_logo": "https://static.hltv.org/images/team/logo/4501",
         "maps": 181,
         "rating": 0.82
-    }              
-            ]
+    }
+]
         }
     }
 }
