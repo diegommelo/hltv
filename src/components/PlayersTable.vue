@@ -19,13 +19,13 @@
                     <img class="image is-pulled-left flag-table" :src="props.row.country" :alt="props.row.country_name" :title="props.row.country_name" />
                 </b-table-column>                
                 <b-table-column field="name" label="Player" width=90 searchable sortable>
-                    {{props.row.name}}
+                    <span class="rating">{{props.row.name}}</span>
                 </b-table-column>
                 <b-table-column field="team_name" label="Team" width=90 searchable sortable>
                     <img class="image is-pulled-left is-24x24 team-logo-table" :src="props.row.team_logo" /> {{props.row.team_name}}
                 </b-table-column>
                 <b-table-column field="rating" label="Rating" width=30 numeric sortable>
-                    <span :class="[{'negative':isNegative(props.row.rating)},'rating']">{{props.row.rating.toFixed(2)}}</span>
+                    <span :class="[{'negative':isNegative(props.row.rating)}]">{{props.row.rating.toFixed(2)}}</span>
                 </b-table-column>                
                 <b-table-column field="maps" label="Maps" width=30 numeric sortable>
                     {{props.row.maps}}

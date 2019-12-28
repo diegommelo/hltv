@@ -189,9 +189,6 @@ export default {
     if(this.item){
       this.fetchData(this.item)
     }
-  },
-  firestore: {
-    topsLoaded: db.collection('data')
   }
 }
 </script>
