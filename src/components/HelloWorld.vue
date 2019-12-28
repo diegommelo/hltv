@@ -44,6 +44,10 @@
           </div>         
         </div>      
       </div> 
+      <div v-if="item" class="share">
+        <p class="share-it">Share it:</p>
+        <b-input :value="'https://top20.diegomelo.com/2019/'+item" class="share-input" size="is-small" id="shareit" @focus="copyShare" readonly></b-input>
+      </div>
       <!-- <div v-if="item" class="share">
         <p class="share-it">Share:</p>
         <div class="share-buttons">
@@ -104,6 +108,16 @@ export default {
     PlayersTable
   },
   methods: {
+    copyShare(){
+      let shareinput = document.getElementById('shareit')
+      shareinput.select();
+      shareinput.setSelectionRange(0,99999);
+      document.execCommand('copy');
+      this.$buefy.toast.open({
+        message:'Link copied',
+        type:'is-info'
+      })
+    },
     openTable(position){
       this.chosen = []
       for(let x in this.top){
@@ -302,5 +316,9 @@ li {
 }
 a {
   color: #42b983;
+}
+.share-input {
+  max-width: 300px;
+  margin:0 auto;
 }
 </style>
