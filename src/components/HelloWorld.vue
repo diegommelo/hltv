@@ -11,7 +11,7 @@
             <div class="player-wrapper" @click="openTable('second')">
               <Player v-bind:player="top.second" size="avatar-medium"></Player>
               <div class="trophy">
-                <img src="https://www.hltv.org/img/static/event/trophies/2018/2.png" class="image is-32x32" />
+                <img src="https://www.hltv.org/img/static/event/trophies/2018/2.png" class="image" />
               </div>                 
             </div>     
           </div>
@@ -19,7 +19,7 @@
             <div class="player-wrapper" @click="openTable('first')">
               <Player v-bind:player="top.first" size="avatar-big"></Player> 
               <div class="trophy">
-                <img src="https://www.hltv.org/img/static/event/trophies/2018/1.png" class="image is-32x32" />
+                <img src="https://www.hltv.org/img/static/event/trophies/2018/1.png" class="image" />
               </div>                                   
             </div>
           </div>
@@ -27,7 +27,7 @@
             <div class="player-wrapper" @click="openTable('third')">
               <Player v-bind:player="top.third" size="avatar-medium"></Player> 
               <div class="trophy">
-                <img src="https://www.hltv.org/img/static/event/trophies/2018/3.png" class="image is-32x32" />
+                <img src="https://www.hltv.org/img/static/event/trophies/2018/3.png" class="image" />
               </div>                                   
             </div>          
           </div>
@@ -198,6 +198,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+@media only screen and (max-width:768px){
+  .trophy {
+    width:32px !important;
+    height: 32px !important;
+  }
+}
 .fa-stack {
   font-size:1.2rem;
 }
@@ -268,8 +274,8 @@ export default {
   margin:10px;
 }
 .trophy {
-  width:32px;
-  height:32px;
+  width:40px;
+  height:40px;
   margin: 0 auto;
 }
 .player-wrapper {

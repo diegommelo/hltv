@@ -29,15 +29,21 @@
         //Twitter
         {name:'twitter:title', content:'Top 20 Simulator'},
         {name:'twitter:description', content:'Make your Top 20 CS:GO Players predictions'},
+        {name:'twitter:card', value:'summary'},
+        {name:'twitter:site', content:'https://top20.diegomelo.com'},
+        {name:'twitter:creator', content:'@dieguitoo'},
+        {name:'twitter:image', content:'https://hltv-76648.firebaseapp.com/img/2019.png'},
         // Google+ / Schema.org
         { itemprop: 'name', content: 'Top 20 Simulator'},
         { itemprop: 'description', content: 'Make your Top 20 CS:GO Players predictions' },
         // ...
         // Facebook / Open Graph
         { property: 'og:title', content: 'Top 20 Simulator' },
+        { property: 'og:site_name', content:'Top 20 Simulator'},
         { property: 'og:description', content:'Make your Top 20 CS:GO Players predictions'},
-        // with shorthand
-        { p: 'og:image', c: '/img/2019.png'},        
+        { property: 'og:image', content: 'https://hltv-76648.firebaseapp.com/img/2019.png'},        
+        { property: 'og:type', content:'website'},
+        { property: 'og:locale', content:"en_US"}
       ]
     }
   }
