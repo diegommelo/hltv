@@ -11,7 +11,7 @@
             <div class="player-wrapper" @click="openTable('second')">
               <Player v-bind:player="top.second" size="avatar-medium"></Player>
               <div class="trophy">
-                <img src="https://www.hltv.org/img/static/event/trophies/2018/2.png" class="image" />
+                <img src="https://www.hltv.org/img/static/event/trophies/2019/2.png" class="image" />
               </div>                 
             </div>     
           </div>
@@ -19,7 +19,7 @@
             <div class="player-wrapper" @click="openTable('first')">
               <Player v-bind:player="top.first" size="avatar-big"></Player> 
               <div class="trophy">
-                <img src="https://www.hltv.org/img/static/event/trophies/2018/1.png" class="image" />
+                <img src="https://www.hltv.org/img/static/event/trophies/2019/1.png" class="image" />
               </div>                                   
             </div>
           </div>
@@ -27,7 +27,7 @@
             <div class="player-wrapper" @click="openTable('third')">
               <Player v-bind:player="top.third" size="avatar-medium"></Player> 
               <div class="trophy">
-                <img src="https://www.hltv.org/img/static/event/trophies/2018/3.png" class="image" />
+                <img src="https://www.hltv.org/img/static/event/trophies/2019/3.png" class="image" />
               </div>                                   
             </div>          
           </div>
@@ -39,7 +39,7 @@
           <div class="player-wrapper" @click="openTable(index)">
             <Player v-bind:player="top[index]" size="avatar-small"></Player> 
             <div class="trophy">
-              <img :src='"https://www.hltv.org/img/static/event/trophies/2018/"+badges[val]+".png"' class="image is-32x32" />
+              <img :src='"https://www.hltv.org/img/static/event/trophies/2019/"+badges[val]+".png"' class="image is-32x32" />
             </div>                                   
           </div>         
         </div>      
