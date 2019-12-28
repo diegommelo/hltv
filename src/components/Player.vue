@@ -116,7 +116,7 @@ export default {
         position: relative;
         margin-top:-16px;
         z-index:1;
-        width:20px;
+        width:20px !important;
         margin-left:8px
     }    
     .top-three .top-one .team_logo {
