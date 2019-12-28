@@ -37,7 +37,7 @@ export default {
     }
     .flag {
         width:12px !important;
-        margin-top:-12px !important;
+        margin-top:-18px !important;
     }
     .team_logo {
         width:12px;
@@ -49,7 +49,7 @@ export default {
     .top-three .flag{
         display: block;
         position: relative;
-        margin-top:-16px;
+        margin-top:-20px !important;
         z-index:1;
         width:13px;
     }    
@@ -86,7 +86,7 @@ export default {
         margin-left:20px;
     }
     .flag {
-        width:18px !important;
+        width:16px !important;
         margin-top:-22px !important;
     }    
 }
