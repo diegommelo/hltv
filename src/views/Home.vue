@@ -22,7 +22,6 @@ export default {
     if(!this.item){
       this.$children[0].clearTops()
     }
-    console.log('updated')
   }
 }
 </script>
