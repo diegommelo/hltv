@@ -146,9 +146,9 @@ export default {
       this.$forceUpdate()
     },
     saveTops(){
-      if(Object.keys(this.top).length < 20) {
+      if(Object.keys(this.top).length < 1) {
         this.$buefy.toast.open({
-          message:'Top 20 incomplete',
+          message:'Select at least 1 player',
           type:'is-danger'
         })
       } else {
